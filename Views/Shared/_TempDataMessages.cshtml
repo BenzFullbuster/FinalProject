@@ -1,0 +1,25 @@
+﻿@{
+    if (TempData["Success"] != null)
+    {
+        <div id="alert-success" class="alert alert-success alert-dismissible fade show" role="alert">
+            <strong>สำเร็จ!!!</strong> @TempData["Success"]
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+    }
+    if (TempData["Warning"] != null)
+    {
+        <div id="alert-warning" class="alert alert-warning alert-dismissible fade show" role="alert">
+            <strong>คำเตือน!!!</strong> @TempData["Warning"]
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+    }
+    if (TempData["Error"] != null)
+    {
+        <div id="alert-danger" class="alert alert-danger alert-dismissible fade show" role="alert">
+            <strong>ข้อผิดพลาด!!!</strong> @TempData["Error"]
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+    }
+}
+
+<div id="alertContainer"></div>

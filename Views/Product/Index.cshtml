@@ -1,0 +1,265 @@
+﻿@using FinalProject.Helpers
+@model IEnumerable<FinalProject.Models.ViewModels.ProductViewModel>
+
+@{
+    ViewData["Title"] = "Product";
+
+    int rows = 1;
+    int startCount = 0;
+
+    DataPager pager = ViewBag.Pager ?? new DataPager();
+    startCount = (pager.CurrentPage - 1) * pager.PageSize;
+
+    string currentSort = ViewData["CurrentSort"]?.ToString() ?? "";
+}
+
+<div id="top">
+    <h1 class="text-primary mb-0">รายการสินค้า</h1>
+    <hr />
+</div>
+
+<div class="btn-toolbar mb-3">
+    <form asp-action="Index" method="get" style="width: 40%">
+        <div class="input-group">
+            <div class="w-auto ">
+                <select id="searchBy" name="searchBy" class="form-control text-center rounded-end-0">
+                    <option value="ProductName"
+                            selected="@(ViewData["SearchBy"] as string == "ProductName" ? "selected" : null)">
+                        สินค้า
+                    </option>
+                    <option value="CategoryName"
+                            selected="@(ViewData["SearchBy"] as string == "CategoryName" ? "selected" : null)">
+                        หมวดสินค้า
+                    </option>
+                    <option value="UnitName"
+                            selected="@(ViewData["SearchBy"] as string == "UnitName" ? "selected" : null)">หน่วยนับ</option>
+                </select>
+            </div>
+            <input type="search" class="form-control" name="searchString" value="@ViewData["CurrentFilter"]"
+                   placeholder="ค้นหา..." />
+            <input type="hidden" name="sortOrder" value="@ViewData["CurrentSort"]" />
+            <input type="hidden" name="pageSize" value="@ViewData["PageSize"]" />
+            <button type="submit" class="btn btn-outline-secondary">
+                <i class="bi bi-search"></i> ค้นหา
+            </button>
+        </div>
+    </form>
+    <div class="ms-auto">
+        <a asp-action="Create" class="btn btn-outline-primary">
+            <i class="bi bi-plus-circle"></i> เพิ่มข้อมูล
+        </a>
+        <button class="btn btn-outline-success dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+            <i class="bi bi-download"></i> ดาวน์โหลด
+        </button>
+        <ul class="dropdown-menu">
+            <li>
+                <a asp-action="ExportCsv" class="dropdown-item">ExportCsv</a>
+            </li>
+            <li>
+                <a asp-action="ExportExcel" class="dropdown-item">ExportExcel</a>
+            </li>
+            <li>
+                <a asp-action="ExportPDF" class="dropdown-item">ExportPDF</a>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<div class="table-responsive">
+    <table class="table table-bordered table-hover">
+        <thead>
+            <tr>
+                <th class="text-center" style="width: 5.5%">ลำดับ</th>
+                <th style="width: 33%">
+                    <a asp-action="Index" asp-route-sortOrder="@ViewData["NameSort"]"
+                       asp-route-searchBy="@ViewData["SearchBy"]"
+                       asp-route-currentFilter="@ViewData["CurrentFilter"]"
+                       asp-route-pageSize="@ViewData["PageSize"]">
+                        @Html.DisplayNameFor(Model => Model.ProductName)
+                        @if (currentSort == "name")
+                        {
+                            <span class="bi bi-arrow-down-short"></span>
+                        }
+                        else if (currentSort == "name_desc")
+                        {
+                            <span class="bi bi-arrow-up-short"></span>
+                        }
+                    </a>
+                </th>
+                <th style="width: 11%">
+                    <a asp-action="Index" asp-route-sortOrder="@ViewData["CategorySort"]"
+                       asp-route-searchBy="@ViewData["SearchBy"]"
+                       asp-route-currentFilter="@ViewData["CurrentFilter"]"
+                       asp-route-pageSize="@ViewData["PageSize"]">
+                        @Html.DisplayNameFor(Model => Model.CategoryName)
+                        @if (currentSort == "category")
+                        {
+                            <span class="bi bi-arrow-down-short"></span>
+                        }
+                        else if (currentSort == "category_desc")
+                        {
+                            <span class="bi bi-arrow-up-short"></span>
+                        }
+                    </a>
+                </th>
+                <th style="width: 10%">
+                    <a asp-action="Index" asp-route-sortOrder="@ViewData["UnitSort"]"
+                       asp-route-searchBy="@ViewData["SearchBy"]"
+                       asp-route-currentFilter="@ViewData["CurrentFilter"]"
+                       asp-route-pageSize="@ViewData["PageSize"]">
+                        @Html.DisplayNameFor(Model => Model.UnitName)
+                        @if (currentSort == "unit")
+                        {
+                            <span class="bi bi-arrow-down-short"></span>
+                        }
+                        else if (currentSort == "unit_desc")
+                        {
+                            <span class="bi bi-arrow-up-short"></span>
+                        }
+                    </a>
+                </th>
+                <th style="width: 10%">
+                    <a asp-action="Index" asp-route-sortOrder="@ViewData["SellpriceSort"]"
+                       asp-route-searchBy="@ViewData["SearchBy"]"
+                       asp-route-currentFilter="@ViewData["CurrentFilter"]"
+                       asp-route-pageSize="@ViewData["PageSize"]">
+                        @Html.DisplayNameFor(Model => Model.Sellprice)
+                        @if (currentSort == "sellPrice")
+                        {
+                            <span class="bi bi-arrow-down-short"></span>
+                        }
+                        else if (currentSort == "sellPrice_desc")
+                        {
+                            <span class="bi bi-arrow-up-short"></span>
+                        }
+                    </a>
+                </th>
+                <th style="width: 10%">
+                    @Html.DisplayNameFor(Model => Model.Balance)
+                </th>
+                <th style="width: 20.5%"></th>
+            </tr>
+        </thead>
+        <tbody class="align-middle">
+            @if (Model != null)
+            {
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <th class="text-center">@(startCount + rows)</th>
+                        <td>@Html.DisplayFor(itemModel => item.ProductName)</td>
+                        <td>@Html.DisplayFor(itemModel => item.CategoryName)</td>
+                        <td>@Html.DisplayFor(itemModel => item.UnitName)</td>
+                        <td class="text-end">@Html.DisplayFor(itemModel => item.Sellprice)</td>
+                        <td class="text-end">@Html.DisplayFor(itemModel => item.Balance)</td>
+                        <td class="text-center">
+                            <a asp-action="Edit" asp-route-id="@item.ProductId" class="btn btn-outline-info btn-sm">
+                                <i class="bi bi-pencil-square"></i> แก้ไข
+                            </a>
+                            <a asp-action="Detail" asp-route-id="@item.ProductId" class="btn btn-outline-warning btn-sm">
+                                <i class="bi bi-eye"></i> รายละเอียด
+                            </a>
+                            <a asp-action="Delete" asp-route-id="@item.ProductId" class="btn btn-outline-danger btn-sm">
+                                <i class="bi bi-trash3"></i> ลบ
+                            </a>
+                        </td>
+                    </tr>
+                    rows += 1;
+                }
+            }
+        </tbody>
+    </table>
+</div>
+
+@if (pager.TotalPages > 0)
+{
+    <div class="btn-toolbar">
+        <div class="btn-group">
+            <button type="button" class="btn btn-outline-dark dropdown-toggle" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                @(ViewData["PageSize"] ?? 10)
+            </button>
+            <ul class="dropdown-menu">
+                @foreach (var size in new int[] { 10, 20, 50 })
+                {
+                    <li>
+                        <a class="dropdown-item" asp-action="Index"
+                           asp-route-searchBy="@ViewData["SearchBy"]"
+                           asp-route-sortOrder="@ViewData["CurrentSort"]"
+                           asp-route-currentFilter="@ViewData["CurrentFilter"]"
+                           asp-route-pageSize="@size">
+                            @size
+                        </a>
+                    </li>
+                }
+            </ul>
+        </div>
+        <div class="align-content-center ms-2">
+            <p class="mb-0">หน้าที่ @pager.CurrentPage จากทั้งหมด @pager.TotalPages หน้า</p>
+        </div>
+        <div class="btn-group ms-auto">
+            <nav aria-label="Page navigation example">
+                <ul class="pagination mb-0">
+                    <li class="page-item @(pager.CurrentPage == 1 ? "disabled" : "")">
+                        <a class="page-link" asp-action="Index"
+                           asp-route-searchBy="@ViewData["SearchBy"]"
+                           asp-route-sortOrder="@ViewData["CurrentSort"]"
+                           asp-route-currentFilter="@ViewData["CurrentFilter"]"
+                           asp-route-pageSize="@ViewData["PageSize"]"
+                           asp-route-currentPage="1">
+                            หน้าแรก
+                        </a>
+                    </li>
+                    <li class="page-item @(pager.CurrentPage == 1 ? "disabled" : "")">
+                        <a class="page-link" asp-action="Index"
+                           asp-route-searchBy="@ViewData["SearchBy"]"
+                           asp-route-sortOrder="@ViewData["CurrentSort"]"
+                           asp-route-currentFilter="@ViewData["CurrentFilter"]"
+                           asp-route-pageSize="@ViewData["PageSize"]"
+                           asp-route-currentPage="@(pager.CurrentPage - 1)">
+                            ก่อนหน้า
+                        </a>
+                    </li>
+                    @for (var p = pager.StartPage; p <= pager.EndPage; p++)
+                    {
+                        <li class="page-item @(p == pager.CurrentPage ? "active" : "")">
+                            <a class="page-link" asp-action="Index"
+                               asp-route-searchBy="@ViewData["SearchBy"]"
+                               asp-route-sortOrder="@ViewData["CurrentSort"]"
+                               asp-route-currentFilter="@ViewData["CurrentFilter"]"
+                               asp-route-pageSize="@ViewData["PageSize"]"
+                               asp-route-currentPage="@p">
+                                @p
+                            </a>
+                        </li>
+                    }
+                    <li class="page-item @(pager.CurrentPage == pager.TotalPages ? "disabled" : "")">
+                        <a class="page-link" asp-action="Index"
+                           asp-route-searchBy="@ViewData["SearchBy"]"
+                           asp-route-sortOrder="@ViewData["CurrentSort"]"
+                           asp-route-currentFilter="@ViewData["CurrentFilter"]"
+                           asp-route-pageSize="@ViewData["PageSize"]"
+                           asp-route-currentPage="@(pager.CurrentPage + 1)">
+                            ถัดไป
+                        </a>
+                    </li>
+                    <li class="page-item @(pager.CurrentPage == pager.TotalPages ? "disabled" : "")">
+                        <a class="page-link" asp-action="Index"
+                           asp-route-searchBy="@ViewData["SearchBy"]"
+                           asp-route-sortOrder="@ViewData["CurrentSort"]"
+                           asp-route-currentFilter="@ViewData["CurrentFilter"]"
+                           asp-route-pageSize="@ViewData["PageSize"]"
+                           asp-route-currentPage="@(pager.TotalPages)">
+                            หน้าสุดท้าย
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <a onclick="topFunction()" id="topbtn" class="btn btn-primary">
+        <i class="bi bi-arrow-up-circle"></i>
+    </a>
+}
+
+<script src="~/js/topbtn.js" asp-append-version="true"></script>

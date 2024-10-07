@@ -1,0 +1,43 @@
+﻿@model FinalProject.Models.ViewModels.PositionEditViewModel
+
+@{
+    ViewData["Title"] = "Position";
+}
+
+<div>
+    <h1 class="text-primary mb-0">แก้ไขตำแหน่ง</h1>
+    <hr />
+</div>
+
+<div>
+    <form asp-action="Edit" asp-route-id="@Model.PositionId" method="post">
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+        <input asp-for="PositionId" type="hidden" />
+        <input asp-for="RowVersion" type="hidden" />
+        <div class="mb-3 was-validated">
+            <label asp-for="PositionName" class="form-label"></label>
+            <input asp-for="PositionName" type="text" class="form-control" required>
+            <span asp-validation-for="PositionName" class="text-danger"></span>
+        </div>
+        <div>
+            <label asp-for="Description" class="form-label"></label>
+            <textarea asp-for="Description" type="text" class="form-control"></textarea>
+            <span asp-validation-for="Description" class="text-danger"></span>
+        </div>
+        <br />
+        <div>
+            <button type="submit" class="btn btn-outline-success">
+                <i class="bi bi-save"></i> บันทึก
+            </button>
+            <a asp-action="Index" class="btn btn-outline-secondary">
+                <i class="bi bi-x-square"></i> ยกเลิก
+            </a>
+        </div>
+    </form>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

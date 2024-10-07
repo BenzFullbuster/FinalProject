@@ -1,0 +1,77 @@
+﻿@model FinalProject.Models.ViewModels.LoginViewModel
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>Login</title>
+
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/lib/bootstrap-icons/css/bootstrap-icons.min.css" />
+</head>
+
+<body>
+    <div class="d-flex justify-content-center align-items-center vh-100 bg-secondary">
+        <div class="bg-white p-4 rounded-4 w-25">
+            <partial name="_TempDataMessages" />
+            <div class="text-center">
+                <img src="~/img/account_4817274_0.png" style="width: 100px; height: 80px;" />
+            </div>
+            <div class="text-primary text-center">
+                <h1>เข้าสู่ระบบ</h1>
+            </div>
+            <form asp-action="Login" method="post">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <div class="mb-2 was-validated">
+                    <label asp-for="WarehouseCode"></label>
+                    <input asp-for="WarehouseCode" type="text" class="form-control" required>
+                    <span asp-validation-for="WarehouseCode" class="text-danger"></span>
+                </div>
+                <div class="mb-2 was-validated">
+                    <label asp-for="Username"></label>
+                    <input asp-for="Username" type="text" class="form-control" required>
+                    <span asp-validation-for="Username" class="text-danger"></span>
+                </div>
+                <div class="mb-2 was-validated">
+                    <label asp-for="Password"></label>
+                    <input asp-for="Password" type="password" class="form-control" required>
+                    <span asp-validation-for="Password" class="text-danger"></span>
+                </div>
+                <div class="row align-items-center">
+                    <div class="col">
+                        <input asp-for="RememberMe" type="checkbox" class="form-check-input" id="RememberMe" />
+                        <label asp-for="RememberMe" class="form-check-label" for="RememberMe">จดจำฉัน</label>
+                    </div>
+                    <div class="col text-end">
+                        <a asp-action="ForgotPassword" class="btn btn-link">ลืมรหัสผ่าน</a>
+                    </div>
+                </div>
+                <br />
+                <div class="d-grid text-center">
+                    <button type="submit" class="btn btn-success">
+                        <i class="bi bi-save"></i> Login
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/jquery-validation/dist/jquery.validate.min.js"></script>
+    <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
+    @section Scripts {
+        @{
+            await Html.RenderPartialAsync("_ValidationScriptsPartial");
+        }
+
+    }
+</body>
+
+</html>

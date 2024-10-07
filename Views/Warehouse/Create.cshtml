@@ -1,0 +1,46 @@
+﻿@model FinalProject.Models.ViewModels.WarehouseCreateViewModel
+
+@{
+    ViewData["Title"] = "Warehouse";
+}
+
+<div>
+    <h1 class="text-primary mb-0">เพิ่มคลังสินค้า</h1>
+    <hr />
+</div>
+
+<div>
+    <form asp-action="Create" method="post">
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+        <div class="mb-3 was-validated">
+            <label asp-for="WarehouseCode" class="form-label"></label>
+            <input asp-for="WarehouseCode" type="text" class="form-control" required>
+            <span asp-validation-for="WarehouseCode" class="text-danger"></span>
+        </div>
+        <div class="mb-3 was-validated">
+            <label asp-for="WarehouseName" class="form-label"></label>
+            <input asp-for="WarehouseName" type="text" class="form-control" required>
+            <span asp-validation-for="WarehouseName" class="text-danger"></span>
+        </div>
+        <div>
+            <label asp-for="Description" class="form-label"></label>
+            <textarea asp-for="Description" type="text" class="form-control"></textarea>
+            <span asp-validation-for="Description" class="text-danger"></span>
+        </div>
+        <br />
+        <div>
+            <button type="submit" class="btn btn-outline-success">
+                <i class="bi bi-save"></i> บันทึก
+            </button>
+            <a asp-action="Index" class="btn btn-outline-secondary">
+                <i class="bi bi-x-square"></i> ยกเลิก
+            </a>
+        </div>
+    </form>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}
