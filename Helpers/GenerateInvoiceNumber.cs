@@ -1,5 +1,4 @@
-﻿using Microsoft.EntityFrameworkCore;
-using System.Text.RegularExpressions;
+using Microsoft.EntityFrameworkCore;
 
 namespace FinalProject.Helpers
 {
@@ -13,20 +12,21 @@ namespace FinalProject.Helpers
             // สร้างเลขจากวันที่
             string invoiceNumber = $"{prefix}-{warehouseCode}-{currentDate:yyMMdd}";
 
-            var filteredItems = await dbSet.AsNoTracking()
-                .Where(item => codeSelector(item).StartsWith(invoiceNumber))
-                .ToListAsync();
+            // ดึงข้อมูลทั้งหมดและทำการประเมินผลฝั่งไคลเอนต์
+            var items = await dbSet.AsNoTracking().ToListAsync();
 
-            int maxExistingNumber = filteredItems
-                .Select(item =>
-                {
-                    string numberPart = codeSelector(item)[invoiceNumber.Length..];
-                    Match match = Regex.Match(numberPart, @"\d+");
-                    return match.Success ? int.Parse(match.Value) : 0;
-                }).DefaultIfEmpty(0).Max();
+            // ประเมินผลฝั่งไคลเอนต์เพื่อกรองข้อมูล
+            var filteredItems = items.Where(item => codeSelector(item)
+                .StartsWith(invoiceNumber)).ToList();
+
+            //หาเลขต่ำสุด
+            int minExistingNumber = filteredItems
+                .Select(item => int.Parse(codeSelector(item)
+                .Substring(invoiceNumber.Length)))
+                .DefaultIfEmpty(0).Max();
 
             // เพิ่มเลขต่ำสุด
-            int nextNumber = maxExistingNumber + 1;
+            int nextNumber = minExistingNumber + 1;
 
             string completeInvoiceNumber = $"{invoiceNumber}{nextNumber:D5}";
 
