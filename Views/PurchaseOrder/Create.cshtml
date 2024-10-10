@@ -1,17 +1,18 @@
-﻿@model FinalProject.Models.ViewModels.PurchaseOrderCreateViewModel
+@model FinalProject.Models.ViewModels.PurchaseOrderCreateViewModel
 
 @{
     ViewData["Title"] = "PurchaseOrder";
 }
 
 <div>
-    <h1 class="text-primary mb-0">เพิ่มใบสั่งซื้อสินค้า</h1>
+    <h1 class="text-primary mb-0">เพิ่มใบสั่งซื้อ</h1>
     <hr />
 </div>
 
 <div>
     <form asp-action="Create" method="post">
         <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+        <input asp-for="WarehouseId" type="hidden" />
         <div class="row mb-3 was-validated">
             <div class="col-3">
                 <label asp-for="PurchaseOrderCode" class="form-label"></label>
@@ -20,33 +21,77 @@
             </div>
             <div class="col-3">
                 <label asp-for="PurchaseOrderDate" class="form-label"></label>
-                <input asp-for="PurchaseOrderDate" type="text" class="form-control" required>
+                <input asp-for="PurchaseOrderDate" id="PurchaseOrderDate" type="text" class="form-control" required>
                 <span asp-validation-for="PurchaseOrderDate" class="text-danger"></span>
             </div>
             <div class="col">
                 <label asp-for="EmployeeId" class="form-label"></label>
                 <select asp-for="EmployeeId" id="EmployeeId" class="form-select" required>
-                    <option value="">เลือกพนักงาน</option>
+                    <option value="@Model.EmployeeId">@Model.EmployeeName</option>
                 </select>
                 <span asp-validation-for="EmployeeId" class="text-danger"></span>
             </div>
         </div>
-        @* <div class="mb-3 was-validated">
-            <label asp-for="UnitId" class="form-label"></label>
-            <select asp-for="UnitId" id="UnitId" class="form-select" required>
-                <option value="">เลือกหน่วยนับ</option>
-            </select>
-            <span asp-validation-for="UnitId" class="text-danger"></span>
-        </div>
         <div class="mb-3 was-validated">
-            <label asp-for="Sellprice" class="form-label"></label>
-            <input asp-for="Sellprice" type="text" class="form-control inputNumber" required>
-            <span asp-validation-for="Sellprice" class="text-danger"></span>
-        </div> *@
+            <label asp-for="SupplierId" class="form-label"></label>
+            <select asp-for="SupplierId" id="SupplierId" class="form-select" required>
+                <option value="">เลือกผู้จำหน่าย</option>
+            </select>
+            <span asp-validation-for="SupplierId" class="text-danger"></span>
+        </div>
         <div>
             <label asp-for="Description" class="form-label"></label>
             <textarea asp-for="Description" type="text" class="form-control"></textarea>
             <span asp-validation-for="Description" class="text-danger"></span>
+        </div>
+        <div class="table-responsive">
+            <table class ="table table-hover table-bordered caption-top">
+                <caption class="text-primary col">
+                    <strong>รายละเอียดใบสั่งซื้อ</strong>
+                    <select asp-for="VatTypeId" asp-items="@ViewBag.VatTypeId" class="form-select p-0 px-2 float-end" style="width: 110px" required>
+                    </select>
+                </caption>
+                <thead class="align-middle text-center">
+                    <tr>
+                        <th>ลำดับ</th>
+                        <th>รายละเอียดสินค้า</th>
+                        <th>จำนวน</th>
+                        <th>หน่วยละ</th>
+                        <th>จำนวนเงิน</th>
+                        <th>
+                            <button type="button" class="btn btn-sm btn-primary rounded-5" data-bs-toggle="modal" data-bs-target="#addDetailModal">
+                                <i class="bi bi-plus-circle"></i> เพิ่มสินค้า
+                            </button>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody id="PODTable" class="text-break">
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th colspan="2" rowspan="3" class="border-0"></th>
+                        <th colspan="2" class="text-end">@Html.DisplayNameFor(Model => Model.Subtotal)</th>
+                        <th colspan="2" class="text-end">
+                            <input asp-for="Subtotal" type="hidden" id="Subtotal" readonly>
+                            <span id="displaySubtotal">@Html.DisplayFor(Model => Model.Subtotal)</span>
+                        </th>
+                    </tr>
+                    <tr>
+                        <th colspan="2" class="text-end">@Html.DisplayNameFor(Model => Model.Vat)</th>
+                        <th colspan="2" class="text-end">
+                            <input asp-for="Vat" type="hidden" id="Vat" readonly>
+                            <span id="displayVat">@Html.DisplayFor(Model => Model.Vat)</span>
+                        </th>
+                    </tr>
+                    <tr class="border-0">
+                        <th colspan="2" class="text-end border-1" style="border-color: #dee2e6">@Html.DisplayNameFor(Model => Model.Nettotal)</th>
+                        <th colspan="2" class="text-end border-1" style="border-color: #dee2e6">
+                            <input asp-for="Nettotal" type="hidden" id="Nettotal" readonly>
+                            <span id="displayNettotal">@Html.DisplayFor(Model => Model.Nettotal)</span>
+                        </th>
+                    </tr>
+                </tfoot>
+            </table>
         </div>
         <br />
         <div>
@@ -60,10 +105,59 @@
     </form>
 </div>
 
+<!-- Modal -->
+<div class="modal fade" id="addDetailModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="addDetailModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="container mt-3" id="alertModalContainer"></div>
+            <div class="modal-header">
+                <h1 class="modal-title fs-5 text-primary" id="addDetailModalLabel">เพิ่มการรายสินค้า</h1>
+                <button type="button" class="btn-close closeModal" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="mb-3">
+                    <label for="CategoryId" class="control-label">หมวดสินค้า</label>
+                    <select id="CategoryId" class="form-select">
+                        <option value="">เลือกหมวดสินค้า</option>
+                    </select>
+                </div>
+                <div class="mb-3 was-validated">
+                    <label for="ProductId" class="control-label">สินค้า</label>
+                    <select id="ProductId" class="form-select" required>
+                        <option value="">เลือกสินค้า</option>
+                    </select>
+                </div>
+                <div class="mb-3 was-validated">
+                    <label for="Quantity" class="control-label">จำนวน</label>
+                    <input id="Quantity" type="text" class="form-control inputNumber" min="1" placeholder="0.00" required />
+                </div>
+                <div class="mb-3 was-validated">
+                    <label for="Unitprice" class="control-label">หน่วยละ</label>
+                    <input id="Unitprice" type="text" class="form-control inputNumber" min="0.00" placeholder="0.00" required />
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" onclick="addRow()" class="btn btn-outline-success">
+                    <i class="bi bi-save"></i> บันทึก
+                </button>
+                <button type="button" class="btn btn-outline-secondary closeModal" data-bs-dismiss="modal">
+                    <i class="bi bi-x-square"></i> ยกเลิก
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
 @section Scripts {
     @{
         await Html.RenderPartialAsync("_ValidationScriptsPartial");
     }
-    @* <script src="~/lib/cleave/dist/cleave.min.js" asp-append-version="true"></script> *@
-
+    <link rel="stylesheet" href="~/lib/bootstrap-datepicker/css/bootstrap-datepicker3.min.css" />
+    <script src="~/lib/bootstrap-datepicker/js/bootstrap-datepicker.min.js"></script>
+    <script src="~/lib/bootstrap-datepicker/locales/bootstrap-datepicker.th.min.js"></script>
+    <script src="~/js/fetchEmployee.js" asp-append-version="true"></script>
+    <script src="~/js/fetchSupplier.js" asp-append-version="true"></script>
+    <script src="~/lib/cleave/dist/cleave.min.js" asp-append-version="true"></script>
+    <script src="~/js/JavaScript.js" asp-append-version="true"></script>
 }
