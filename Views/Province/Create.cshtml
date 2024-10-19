@@ -1,0 +1,36 @@
+﻿@model FinalProject.Models.ViewModels.ProvinceCreateViewModel
+
+@{
+    ViewData["Title"] = "Province";
+}
+
+<div>
+    <h1 class="text-primary mb-0">เพิ่มจังหวัด</h1>
+    <hr />
+</div>
+
+<div>
+    <form asp-action="Create" method="post">
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+        <div class="was-validated">
+            <label asp-for="ProvinceName" class="form-label"></label>
+            <input asp-for="ProvinceName" type="text" class="form-control" required>
+            <span asp-validation-for="ProvinceName" class="text-danger"></span>
+        </div>
+        <br />
+        <div>
+            <button type="submit" class="btn btn-outline-success">
+                <i class="bi bi-save"></i> บันทึก
+            </button>
+            <a asp-action="Index" class="btn btn-outline-secondary">
+                <i class="bi bi-x-square"></i> ยกเลิก
+            </a>
+        </div>
+    </form>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

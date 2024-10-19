@@ -1,0 +1,45 @@
+﻿@model FinalProject.Models.ViewModels.DistrictCreateViewModel
+
+@{
+    ViewData["Title"] = "District";
+}
+
+<div>
+    <h1 class="text-primary mb-0">เพิ่มเขต/อำเภอ</h1>
+    <hr />
+</div>
+
+<div>
+    <form asp-action="Create" method="post">
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+        <div class="mb-3 was-validated">
+            <label asp-for="DistrictName" class="form-label"></label>
+            <input asp-for="DistrictName" type="text" class="form-control" required>
+            <span asp-validation-for="DistrictName" class="text-danger"></span>
+        </div>
+        <div class="was-validated">
+            <label asp-for="ProvinceId" class="form-label"></label>
+            <select asp-for="ProvinceId" id="ProvinceId" class="form-select" required>
+                <option value="">เลือกจังหวัด</option>
+            </select>
+            <span asp-validation-for="ProvinceId" class="text-danger"></span>
+        </div>
+        <br />
+        <div>
+            <button type="submit" class="btn btn-outline-success">
+                <i class="bi bi-save"></i> บันทึก
+            </button>
+            <a asp-action="Index" class="btn btn-outline-secondary">
+                <i class="bi bi-x-square"></i> ยกเลิก
+            </a>
+        </div>
+    </form>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+    <script src="~/js/fetchProvince.js" asp-append-version="true"></script>
+
+}

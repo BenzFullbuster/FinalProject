@@ -1,0 +1,38 @@
+﻿@model FinalProject.Models.ViewModels.ProvinceEditViewModel
+
+@{
+    ViewData["Title"] = "Province";
+}
+
+<div>
+    <h1 class="text-primary mb-0">แก้ไขจังหวัด</h1>
+    <hr />
+</div>
+
+<div>
+    <form asp-action="Edit" asp-route-id="@Model.ProvinceId" method="post">
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+        <input asp-for="ProvinceId" type="hidden" />
+        <input asp-for="RowVersion" type="hidden" />
+        <div class="was-validated">
+            <label asp-for="ProvinceName" class="form-label"></label>
+            <input asp-for="ProvinceName" type="text" class="form-control" required>
+            <span asp-validation-for="ProvinceName" class="text-danger"></span>
+        </div>
+        <br />
+        <div>
+            <button type="submit" class="btn btn-outline-success">
+                <i class="bi bi-save"></i> บันทึก
+            </button>
+            <a asp-action="Index" class="btn btn-outline-secondary">
+                <i class="bi bi-x-square"></i> ยกเลิก
+            </a>
+        </div>
+    </form>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

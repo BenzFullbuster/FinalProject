@@ -1,0 +1,43 @@
+﻿@model FinalProject.Models.ViewModels.CategoryEditViewModel
+
+@{
+    ViewData["Title"] = "Category";
+}
+
+<div>
+    <h1 class="text-primary mb-0">แก้ไขหมวดสินค้า</h1>
+    <hr />
+</div>
+
+<div>
+    <form asp-action="Edit" asp-route-id="@Model.CategoryId" method="post">
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+        <input asp-for="CategoryId" type="hidden" />
+        <input asp-for="RowVersion" type="hidden" />
+        <div class="mb-3 was-validated">
+            <label asp-for="CategoryName" class="form-label"></label>
+            <input asp-for="CategoryName" type="text" class="form-control" required>
+            <span asp-validation-for="CategoryName" class="text-danger"></span>
+        </div>
+        <div>
+            <label asp-for="Description" class="form-label"></label>
+            <textarea asp-for="Description" type="text" class="form-control"></textarea>
+            <span asp-validation-for="Description" class="text-danger"></span>
+        </div>
+        <br />
+        <div>
+            <button type="submit" class="btn btn-outline-success">
+                <i class="bi bi-save"></i> บันทึก
+            </button>
+            <a asp-action="Index" class="btn btn-outline-secondary">
+                <i class="bi bi-x-square"></i> ยกเลิก
+            </a>
+        </div>
+    </form>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

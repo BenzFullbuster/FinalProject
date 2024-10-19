@@ -1,0 +1,240 @@
+﻿@model FinalProject.Models.ViewModels.ReceiveGoodsEditViewModel
+
+@{
+    ViewData["Title"] = "ReceiveGoods";
+}
+
+<div>
+    <h1 class="text-primary mb-0">แก้ไขใบสั่งซื้อ</h1>
+    <hr />
+</div>
+
+<div>
+    <form asp-action="Edit" asp-route-id="@Model.ReceiveGoodsId" method="post">
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+        <input asp-for="ReceiveGoodsId" type="hidden" />
+        <input asp-for="WarehouseId" type="hidden" />
+        <input asp-for="StatusId" type="hidden" />
+        <input asp-for="RowVersion" type="hidden" />
+        <div class="row mb-3 was-validated">
+            <div class="col-3">
+                <label asp-for="ReceiveGoodsCode" class="form-label"></label>
+                <input asp-for="ReceiveGoodsCode" type="text" class="form-control" required>
+                <span asp-validation-for="ReceiveGoodsCode" class="text-danger"></span>
+            </div>
+            <div class="col-2">
+                <label asp-for="ReceiveGoodsDate" class="form-label"></label>
+                <input asp-for="ReceiveGoodsDate" id="ReceiveGoodsDate" type="text" class="form-control" required>
+                <span asp-validation-for="ReceiveGoodsDate" class="text-danger"></span>
+            </div>
+            <div class="col">
+                <label asp-for="EmployeeId" class="form-label"></label>
+                <select asp-for="EmployeeId" id="EmployeeId" class="form-select" required>
+                    <option value="@Model.EmployeeId">@Model.EmployeeName</option>
+                </select>
+                <span asp-validation-for="EmployeeId" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="row mb-3">
+            <div class="col was-validated">
+                <label asp-for="SupplierId" class="form-label"></label>
+                <select asp-for="SupplierId" id="SupplierId" class="form-select" required>
+                    <option value="@Model.SupplierId">@Model.SupplierName</option>
+                </select>
+                <span asp-validation-for="SupplierId" class="text-danger"></span>
+            </div>
+            <div class="col-3">
+                <label asp-for="PurchaseOrderId" class="form-label"></label>
+                <select asp-for="PurchaseOrderId" id="PurchaseOrderId" class="form-select">
+                    <option value="@Model.PurchaseOrderId">@Model.PurchaseOrderCode</option>
+                </select>
+                <span asp-validation-for="PurchaseOrderId" class="text-danger"></span>
+            </div>
+        </div>
+        <div>
+            <label asp-for="Description" class="form-label"></label>
+            <textarea asp-for="Description" type="text" class="form-control"></textarea>
+            <span asp-validation-for="Description" class="text-danger"></span>
+        </div>
+        <div class="table-responsive">
+            <table class="table table-hover table-bordered caption-top">
+                <caption class="text-primary col">
+                    <strong>รายละเอียดใบสั่งซื้อ</strong>
+                    <select asp-for="VatTypeId" asp-items="@ViewBag.VatTypeId" class="form-select p-0 px-2 float-end" style="width: 110px" required>
+                    </select>
+                </caption>
+                <thead class="align-middle text-center">
+                    <tr>
+                        <th style="width: 5.5%">ลำดับ</th>
+                        <th>@Html.DisplayNameFor(Model => Model.ReceiveGoodsDetails.First().ProductId)</th>
+                        <th style="width: 10%">@Html.DisplayNameFor(Model => Model.ReceiveGoodsDetails.First().Quantity)</th>
+                        <th style="width: 12%">@Html.DisplayNameFor(Model => Model.ReceiveGoodsDetails.First().Unitprice)</th>
+                        <th style="width: 12%">@Html.DisplayNameFor(Model => Model.ReceiveGoodsDetails.First().Amount)</th>
+                        <th style="width: 10%">
+                            <button type="button" class="btn btn-sm btn-primary rounded-5" data-bs-toggle="modal" data-bs-target="#addDetailModal">
+                                <i class="bi bi-plus-circle"></i> เพิ่มสินค้า
+                            </button>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody id="PODTable" class="text-break">
+                    @if (Model.ReceiveGoodsDetails.Any() || Model.ReceiveGoodsDetails.Count > 0)
+                    {
+                        @for (int i = 0; i < Model.ReceiveGoodsDetails.Count; i++)
+                        {
+                            <tr>
+                                <td class="text-center">
+                                    @(i + 1)
+                                    @Html.HiddenFor(Model => Model.ReceiveGoodsDetails[i].ReceiveGoodsDetailId)
+                                    @Html.HiddenFor(Model => Model.ReceiveGoodsDetails[i].ReceiveGoodsId)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(Model => Model.ReceiveGoodsDetails[i].ProductName)
+                                    @Html.HiddenFor(Model => Model.ReceiveGoodsDetails[i].ProductId)
+                                </td>
+                                <td class="text-end">
+                                    @Html.DisplayFor(Model => Model.ReceiveGoodsDetails[i].Quantity)
+                                    @Html.HiddenFor(Model => Model.ReceiveGoodsDetails[i].Quantity)
+                                </td>
+                                <td class="text-end">
+                                    @Html.DisplayFor(Model => Model.ReceiveGoodsDetails[i].Unitprice)
+                                    @Html.HiddenFor(Model => Model.ReceiveGoodsDetails[i].Unitprice)
+                                </td>
+                                <td class="text-end">
+                                    @Html.DisplayFor(Model => Model.ReceiveGoodsDetails[i].Amount)
+                                    @Html.HiddenFor(Model => Model.ReceiveGoodsDetails[i].Amount)
+                                </td>
+                                <td class="text-center">
+                                    <button type="button" onclick="removeRow(this)" class="btn btn-sm btn-danger rounded-5">
+                                        <i class="bi bi-trash3"></i> ลบ
+                                    </button>
+                                </td>
+                            </tr>
+                        }
+                    }
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th colspan="2" rowspan="3" class="border-0"></th>
+                        <th colspan="2" class="text-end">@Html.DisplayNameFor(Model => Model.Subtotal)</th>
+                        <td colspan="2" class="text-end">
+                            <input asp-for="Subtotal" type="hidden" id="Subtotal" readonly>
+                            <span id="displaySubtotal">@Html.DisplayFor(Model => Model.Subtotal)</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th colspan="2" class="text-end">@Html.DisplayNameFor(Model => Model.Vat)</th>
+                        <td colspan="2" class="text-end">
+                            <input asp-for="Vat" type="hidden" id="Vat" readonly>
+                            <span id="displayVat">@Html.DisplayFor(Model => Model.Vat)</span>
+                        </td>
+                    </tr>
+                    <tr class="border-0">
+                        <th colspan="2" class="text-end border-1" style="border-color: #dee2e6">@Html.DisplayNameFor(Model => Model.Nettotal)</th>
+                        <td colspan="2" class="text-end border-1" style="border-color: #dee2e6">
+                            <input asp-for="Nettotal" type="hidden" id="Nettotal" readonly>
+                            <span id="displayNettotal">@Html.DisplayFor(Model => Model.Nettotal)</span>
+                        </td>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+        <br />
+        <div>
+            <button type="submit" class="btn btn-outline-success">
+                <i class="bi bi-save"></i> บันทึก
+            </button>
+            <a asp-action="Index" class="btn btn-outline-secondary">
+                <i class="bi bi-x-square"></i> ยกเลิก
+            </a>
+        </div>
+    </form>
+</div>
+
+<!-- Modal เพิ่มสินค้า-->
+<div class="modal fade" id="addDetailModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="addDetailModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="container mt-3" id="alertModalContainer"></div>
+            <div class="modal-header">
+                <h1 class="modal-title fs-5 text-primary" id="addDetailModalLabel">เพิ่มการรายสินค้า</h1>
+                <button type="button" class="btn-close closeModal" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="mb-3">
+                    <label for="CategoryId" class="control-label">หมวดสินค้า</label>
+                    <select id="CategoryId" class="form-select">
+                        <option value="">เลือกหมวดสินค้า</option>
+                    </select>
+                </div>
+                <div class="mb-3 was-validated">
+                    <label for="ProductId" class="control-label">สินค้า</label>
+                    <select id="ProductId" class="form-select" required>
+                        <option value="">เลือกสินค้า</option>
+                    </select>
+                </div>
+                <div class="mb-3 was-validated">
+                    <label for="Quantity" class="control-label">จำนวน</label>
+                    <input id="Quantity" type="text" class="form-control inputNumber" min="1" placeholder="0.00" required />
+                </div>
+                <div class="mb-3 was-validated">
+                    <label for="Unitprice" class="control-label">หน่วยละ</label>
+                    <input id="Unitprice" type="text" class="form-control inputNumber" min="0.00" placeholder="0.00" required />
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" onclick="addRow()" class="btn btn-outline-success">
+                    <i class="bi bi-save"></i> บันทึก
+                </button>
+                <button type="button" class="btn btn-outline-secondary closeModal" data-bs-dismiss="modal">
+                    <i class="bi bi-x-square"></i> ยกเลิก
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal เลือกสินค้า-->
+<div class="modal fade" id="poDetailsModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="poDetailsModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="poDetailsModalLabel">เลือกสินค้าจากใบสั่งซื้อ</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <table class="table table-bordered">
+                    <thead class="align-middle text-center">
+                        <tr>
+                            <th style="width: 7.5%">เลือก</th>
+                            <th>รายละเอียดสินค้า</th>
+                            <th style="width: 12.5%">จำนวน</th>
+                            <th style="width: 14%">หน่วยละ</th>
+                            <th style="width: 14%">จำนวนเงิน</th>
+                        </tr>
+                    </thead>
+                    <tbody id="poDetailsTable">
+                    </tbody>
+                </table>
+            </div>
+            <div class="modal-footer">
+                <button type="button" id="selectAllItems" class="btn btn-primary">เลือกทั้งหมด</button>
+                <button type="button" id="addSelectedItems" class="btn btn-success" data-bs-dismiss="modal">เพิ่มที่เลือก</button>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">ยกเลิก</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+    <link rel="stylesheet" href="~/lib/bootstrap-datepicker/css/bootstrap-datepicker3.min.css" />
+    <script src="~/lib/bootstrap-datepicker/js/bootstrap-datepicker.min.js"></script>
+    <script src="~/lib/bootstrap-datepicker/locales/bootstrap-datepicker.th.min.js"></script>
+    <script src="~/js/fetchEmployee.js" asp-append-version="true"></script>
+    <script src="~/js/fetchSupplier.js" asp-append-version="true"></script>
+    <script src="~/lib/cleave/dist/cleave.min.js" asp-append-version="true"></script>
+    <script src="~/js/receiveGoods.js" asp-append-version="true"></script>
+}

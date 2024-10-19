@@ -1,0 +1,140 @@
+﻿@model FinalProject.Models.ViewModels.PurchaseOrderViewModel
+
+@{
+    ViewData["Title"] = "PurchaseOrder";
+    int rows = 1;
+}
+
+<div>
+    <h1 class="text-primary mb-0">ลบใบสั่งซื้อ</h1>
+    <h3 class="text-danger mb-0">คุณแน่ใจหรือไม่ว่าต้องการลบสิ่งนี้</h3>
+    <hr />
+</div>
+<div class="row p-3 pt-0">
+    <div class="col p-0">
+        <h4 class="mb-0">บริษัท กคข จำกัด (สำนักงานใหญ่)</h4>
+        <address class="mb-0">
+            149 หมู่ที่ 1 คลองบางบอน บางบอน กรุงเทพฯ 10150<br />
+            โทร.0-2222-2222<br />
+            เลขประจำตัวผู้เสียภาษี 01234567890123
+        </address>
+    </div>
+    <div class="col-3 p-0 text-center align-content-center">
+        <h1 class="text-primary mb-0">ใบสั่งซื้อ</h1>
+    </div>
+</div>
+<div class="row py-3 px-2 ms-1 mb-3 border rounded-4">
+    <div class="col p-0">
+        <p class="mb-0">
+            <strong>@Html.DisplayNameFor(Model => Model.SupplierName)</strong>
+            @Html.DisplayFor(Model => Model.SupplierName)
+        </p>
+        <address class="mb-0 p-0">
+            <strong>@Html.DisplayNameFor(Model => Model.SupplierAddress)</strong> @Html.DisplayFor(Model => Model.SupplierAddress)<br />
+            <strong>@Html.DisplayNameFor(Model => Model.SupplierPhoneNumber)</strong> @Html.DisplayFor(Model => Model.SupplierPhoneNumber)<br />
+            <strong>@Html.DisplayNameFor(Model => Model.SupplierTaxNumber)</strong> @Html.DisplayFor(Model => Model.FormattedTaxNumber)
+        </address>
+    </div>
+    <div class="col-1 p-0 pe-1 text-end border-end">
+        <p class="mb-0">
+            <strong>@Html.DisplayNameFor(Model => Model.PurchaseOrderCode)</strong>
+            <br />
+            <strong>@Html.DisplayNameFor(Model => Model.PurchaseOrderDate)</strong>
+            <br />
+            <strong>@Html.DisplayNameFor(Model => Model.EmployeeName)</strong>
+        </p>
+    </div>
+    <div class="col-2 p-0 ps-1 text-start">
+        <p class="mb-0 text-truncate">
+            @Html.DisplayFor(Model => Model.PurchaseOrderCode)
+            <br />
+            @Html.DisplayFor(Model => Model.PurchaseOrderDate)
+            <br />
+            @Html.DisplayFor(Model => Model.EmployeeName)
+        </p>
+    </div>
+</div>
+<div class="row ms-1">
+    <table class="table table-bordered table-hover rounded-top-4">
+        <thead class="align-middle text-center">
+            <tr>
+                <th style="width: 5.5%">ลำดับ</th>
+                <th style="width: 60.5%">@Html.DisplayNameFor(Model => Model.PurchaseOrderDetails.First().ProductId)</th>
+                <th style="width: 10%">@Html.DisplayNameFor(Model => Model.PurchaseOrderDetails.First().Quantity)</th>
+                <th style="width: 12%">@Html.DisplayNameFor(Model => Model.PurchaseOrderDetails.First().Unitprice)</th>
+                <th style="width: 12%">@Html.DisplayNameFor(Model => Model.PurchaseOrderDetails.First().Amount)</th>
+            </tr>
+        </thead>
+        <tbody>
+            @if (Model.PurchaseOrderDetails.Any() || Model.PurchaseOrderDetails.Count() > 0)
+            {
+                @foreach (var item in Model.PurchaseOrderDetails)
+                {
+                    <tr>
+                        <td class="text-center">@rows</td>
+                        <td>@Html.DisplayFor(itemModel => item.ProductName)</td>
+                        <td class="text-end">@Html.DisplayFor(itemModel => item.Quantity)</td>
+                        <td class="text-end">@Html.DisplayFor(itemModel => item.Unitprice)</td>
+                        <td class="text-end">@Html.DisplayFor(itemModel => item.Amount)</td>
+                    </tr>
+                    rows++;
+                }
+            }
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="2" rowspan="2" class="align-top text-break">
+                    <strong>@Html.DisplayNameFor(Model => Model.Description) : </strong>@Html.DisplayFor(Model => Model.Description)
+                </td>
+                <th colspan="2" class="text-end">@Html.DisplayNameFor(Model => Model.Subtotal)</th>
+                <td class="text-end">@Html.DisplayFor(Model => Model.Subtotal)</td>
+            </tr>
+            <tr>
+                <th colspan="2" class="text-end">@Html.DisplayNameFor(Model => Model.Vat)</th>
+                <td colspan="2" class="text-end">@Html.DisplayFor(Model => Model.Vat)</td>
+            </tr>
+            <tr>
+                <th colspan="2" class="text-center">@Html.DisplayFor(Model => Model.NettotalText)</th>
+                <th colspan="2" class="text-end border-1" style="border-color: #dee2e6">@Html.DisplayNameFor(Model => Model.Nettotal)</th>
+                <td colspan="2" class="text-end border-1" style="border-color: #dee2e6">@Html.DisplayFor(Model => Model.Nettotal)</td>
+            </tr>
+        </tfoot>
+    </table>
+</div>
+<br />
+<div>
+    <button type="button" class="btn btn-outline-danger" data-bs-toggle="modal" data-bs-target="#btnDeleteModal">
+        <i class="bi bi-trash3"></i> ลบ
+    </button>
+    <a asp-action="Index" class="btn btn-outline-secondary">
+        <i class="bi bi-x-square"></i> ยกเลิก
+    </a>
+</div>
+
+<div class="modal fade" id="btnDeleteModal" data-bs-backdrop="static" tabindex="-1"
+     aria-labelledby="btnDeleteModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5 text-danger" id="btnDeleteModalLabel">
+                    คุณแน่ใจหรือไม่ว่าต้องการลบสิ่งนี้
+                </h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p class="mb-0">คุณต้องการลบข้อมูล : <strong>@Model.PurchaseOrderCode</strong> ใช่หรือไม่</p>
+            </div>
+            <div class="modal-footer">
+                <form asp-action="Delete" asp-route-id="@Model.PurchaseOrderId" method="post">
+                    <input asp-for="RowVersion" type="hidden" />
+                    <button type="submit" class="btn btn-outline-danger" data-bs-dismiss="modal">
+                        <i class="bi bi-trash3"></i> ลบ
+                    </button>
+                </form>
+                <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">
+                    <i class="bi bi-x-square"></i> ยกเลิก
+                </button>
+            </div>
+        </div>
+    </div>
+</div>

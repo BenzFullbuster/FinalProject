@@ -1,0 +1,107 @@
+﻿@model FinalProject.Models.ViewModels.EmployeeEditViewModel
+
+@{
+    ViewData["Title"] = "Employee";
+}
+
+<div>
+    <h1 class="text-primary mb-0">แก้ไขพนักงาน</h1>
+    <hr />
+</div>
+
+<div>
+    <form asp-action="Edit" asp-route-id="@Model.EmployeeId" method="post">
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+        <input asp-for="EmployeeId" type="hidden" />
+        <input asp-for="RowVersion" type="hidden" />
+        <div class="row mb-3">
+            <div class="col was-validated">
+                <label asp-for="EmployeeName" class="form-label"></label>
+                <input asp-for="EmployeeName" type="text" class="form-control" required>
+                <span asp-validation-for="EmployeeName" class="text-danger"></span>
+            </div>
+            <div class="col-3 was-validated">
+                <label asp-for="PositionId" class="form-label"></label>
+                <select asp-for="PositionId" id="PositionId" class="form-select" required>
+                    <option value="@Model.PositionId">@Model.PositionName</option>
+                </select>
+                <span asp-validation-for="PositionId" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="mb-3">
+            <label asp-for="Address" class="form-label"></label>
+            <input asp-for="Address" type="text" class="form-control">
+            <span asp-validation-for="Address" class="text-danger"></span>
+        </div>
+        <div class="row mb-3">
+            <div class="col">
+                <label asp-for="ProvinceId" class="form-label"></label>
+                <select asp-for="ProvinceId" id="ProvinceId" class="form-select">
+                    <option value="@Model.ProvinceId">@Model.ProvinceName</option>
+                </select>
+                <span asp-validation-for="ProvinceId" class="text-danger"></span>
+            </div>
+            <div class="col">
+                <label asp-for="DistrictId" class="form-label"></label>
+                <select asp-for="DistrictId" id="DistrictId" class="form-select">
+                    <option value="@Model.DistrictId">@Model.DistrictName</option>
+                </select>
+                <span asp-validation-for="DistrictId" class="text-danger"></span>
+            </div>
+            <div class="col">
+                <label asp-for="SubdistrictId" class="form-label"></label>
+                <select asp-for="SubdistrictId" id="SubdistrictId" class="form-select">
+                    <option value="@Model.SubdistrictId">@Model.SubdistrictName</option>
+                </select>
+                <span asp-validation-for="SubdistrictId" class="text-danger"></span>
+            </div>
+            <div class="col-2">
+                <label asp-for="Zipcode" class="form-label"></label>
+                <input asp-for="Zipcode" type="text" id="Zipcode" class="form-control" readonly>
+                <span asp-validation-for="Zipcode" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="row mb-3">
+            <div class="col-3">
+                <label asp-for="PhoneNumber" class="form-label"></label>
+                <input asp-for="PhoneNumber" type="text" id="PhoneNumber" class="form-control inputPhone">
+                <span asp-validation-for="PhoneNumber" class="text-danger"></span>
+            </div>
+            <div class="col">
+                <label asp-for="Email" class="form-label"></label>
+                <input asp-for="Email" type="email" id="Email" class="form-control">
+                <span asp-validation-for="Email" class="text-danger"></span>
+            </div>
+            <div class="col-3 was-validated">
+                <label asp-for="Taxnumber" class="form-label"></label>
+                <input asp-for="Taxnumber" type="text" id="Taxnumber" class="form-control inputTaxnumber" required>
+                <span asp-validation-for="Taxnumber" class="text-danger"></span>
+            </div>
+        </div>
+        <div>
+            <label asp-for="Description" class="form-label"></label>
+            <textarea asp-for="Description" type="text" class="form-control"></textarea>
+            <span asp-validation-for="Description" class="text-danger"></span>
+        </div>
+        <br />
+        <div>
+            <button type="submit" class="btn btn-outline-success">
+                <i class="bi bi-save"></i> บันทึก
+            </button>
+            <a asp-action="Index" class="btn btn-outline-secondary">
+                <i class="bi bi-x-square"></i> ยกเลิก
+            </a>
+        </div>
+    </form>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+    <script src="~/js/fetchPosition.js" asp-append-version="true"></script>
+    <script src="~/js/dropdownProvince.js" asp-append-version="true"></script>
+    <script src="~/lib/cleave/dist/cleave.min.js" asp-append-version="true"></script>
+    <script src="~/js/inputPhoneNumber.js" asp-append-version="true"></script>
+    <script src="~/js/intputTaxnumber.js" asp-append-version="true"></script>
+}

@@ -1,0 +1,100 @@
+﻿@model FinalProject.Models.ViewModels.ProductViewModel
+
+@{
+    ViewData["Title"] = "Product";
+}
+
+<div>
+    <h1 class="text-primary mb-0">ลบสินค้า</h1>
+    <h3 class="text-danger mb-0">คุณแน่ใจหรือไม่ว่าต้องการลบสิ่งนี้</h3>
+    <hr />
+</div>
+
+<div>
+    <dl class="row" style="line-height: 30px">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(Model => Model.ProductName)
+        </dt>
+        <dd class="col-sm-10 mb-0">
+            @Html.DisplayFor(Model => Model.ProductName)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(Model => Model.CategoryName)
+        </dt>
+        <dd class="col-sm-10 mb-0">
+            @Html.DisplayFor(Model => Model.CategoryName)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(Model => Model.UnitName)
+        </dt>
+        <dd class="col-sm-10 mb-0">
+            @Html.DisplayFor(Model => Model.UnitName)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(Model => Model.Sellprice)
+        </dt>
+        <dd class="col-sm-10 mb-0">
+            @Html.DisplayFor(Model => Model.Sellprice) บาท
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(Model => Model.Balance)
+        </dt>
+        <dd class="col-sm-10 mb-0">
+            @Html.DisplayFor(Model => Model.Balance) @Html.DisplayFor(Model => Model.UnitName)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(Model => Model.Description)
+        </dt>
+        <dd class="col-sm-10 mb-0">
+            @Html.DisplayFor(Model => Model.Description)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(Model => Model.CreatedDate)
+        </dt>
+        <dd class="col-sm-10 mb-0">
+            @Html.DisplayFor(Model => Model.CreatedDate)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(Model => Model.ModifiedDate)
+        </dt>
+        <dd class="col-sm-10 mb-0">
+            @Html.DisplayFor(Model => Model.ModifiedDate)
+        </dd>
+    </dl>
+</div>
+<div>
+    <button type="button" class="btn btn-outline-danger" data-bs-toggle="modal" data-bs-target="#btnDeleteModal">
+        <i class="bi bi-trash3"></i> ลบ
+    </button>
+    <a asp-action="Index" class="btn btn-outline-secondary">
+        <i class="bi bi-x-square"></i> ยกเลิก
+    </a>
+</div>
+
+<div class="modal fade" id="btnDeleteModal" data-bs-backdrop="static" tabindex="-1"
+     aria-labelledby="btnDeleteModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5 text-danger" id="btnDeleteModalLabel">
+                    คุณแน่ใจหรือไม่ว่าต้องการลบสิ่งนี้
+                </h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p class="mb-0">คุณต้องการลบข้อมูล : <strong>@Model.ProductName</strong> ใช่หรือไม่</p>
+            </div>
+            <div class="modal-footer">
+                <form asp-action="Delete" asp-route-id="@Model.ProductId" method="post">
+                    <input asp-for="RowVersion" type="hidden" />
+                    <button type="submit" class="btn btn-outline-danger" data-bs-dismiss="modal">
+                        <i class="bi bi-trash3"></i> ลบ
+                    </button>
+                </form>
+                <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">
+                    <i class="bi bi-x-square"></i> ยกเลิก
+                </button>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,65 @@
+﻿@model FinalProject.Models.ViewModels.ProductCreateViewModel
+
+@{
+    ViewData["Title"] = "Product";
+}
+
+<div>
+    <h1 class="text-primary mb-0">เพิ่มสินค้า</h1>
+    <hr />
+</div>
+
+<div>
+    <form asp-action="Create" method="post">
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+        <div class="mb-3 was-validated">
+            <label asp-for="ProductName" class="form-label"></label>
+            <input asp-for="ProductName" type="text" class="form-control" required>
+            <span asp-validation-for="ProductName" class="text-danger"></span>
+        </div>
+        <div class="mb-3 was-validated">
+            <label asp-for="CategoryId" class="form-label"></label>
+            <select asp-for="CategoryId" id="CategoryId" class="form-select" required>
+                <option value="">เลือกหมวดสินค้า</option>
+            </select>
+            <span asp-validation-for="CategoryId" class="text-danger"></span>
+        </div>
+        <div class="mb-3 was-validated">
+            <label asp-for="UnitId" class="form-label"></label>
+            <select asp-for="UnitId" id="UnitId" class="form-select" required>
+                <option value="">เลือกหน่วยนับ</option>
+            </select>
+            <span asp-validation-for="UnitId" class="text-danger"></span>
+        </div>
+        <div class="mb-3 was-validated">
+            <label asp-for="Sellprice" class="form-label"></label>
+            <input asp-for="Sellprice" type="text" class="form-control inputNumber" required>
+            <span asp-validation-for="Sellprice" class="text-danger"></span>
+        </div>
+        <div>
+            <label asp-for="Description" class="form-label"></label>
+            <textarea asp-for="Description" type="text" class="form-control"></textarea>
+            <span asp-validation-for="Description" class="text-danger"></span>
+        </div>
+        <br />
+        <div>
+            <button type="submit" class="btn btn-outline-success">
+                <i class="bi bi-save"></i> บันทึก
+            </button>
+            <a asp-action="Index" class="btn btn-outline-secondary">
+                <i class="bi bi-x-square"></i> ยกเลิก
+            </a>
+        </div>
+    </form>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+    <script src="~/lib/cleave/dist/cleave.min.js" asp-append-version="true"></script>
+    <script src="~/js/fetchCategory.js" asp-append-version="true"></script>
+    <script src="~/js/fetchUnit.js" asp-append-version="true"></script>
+    <script src="~/js/inputNumber.js" asp-append-version="true"></script>
+
+}

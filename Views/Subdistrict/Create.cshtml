@@ -1,0 +1,51 @@
+﻿@model FinalProject.Models.ViewModels.SubdistrictCreateViewModel
+
+@{
+    ViewData["Title"] = "Subdistrict";
+}
+
+<div>
+    <h1 class="text-primary mb-0">เพิ่มแขวง/ตำบล</h1>
+    <hr />
+</div>
+
+<div>
+    <form asp-action="Create" method="post">
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+        <div class="mb-3 was-validated">
+            <label asp-for="SubdistrictName" class="form-label"></label>
+            <input asp-for="SubdistrictName" type="text" class="form-control" required>
+            <span asp-validation-for="SubdistrictName" class="text-danger"></span>
+        </div>
+        <div class="mb-3 was-validated">
+            <label asp-for="DistrictId" class="form-label"></label>
+            <select asp-for="DistrictId" id="DistrictId" class="form-select" required>
+                <option value="">เลือกเขต/อำเภอ</option>
+            </select>
+            <span asp-validation-for="DistrictId" class="text-danger"></span>
+        </div>
+        <div class="was-validated">
+            <label asp-for="Zipcode" class="form-label"></label>
+            <input asp-for="Zipcode" type="text" class="form-control inputZipcode" inputmode="numeric" required>
+            <span asp-validation-for="Zipcode" class="text-danger"></span>
+        </div>
+        <br />
+        <div>
+            <button type="submit" class="btn btn-outline-success">
+                <i class="bi bi-save"></i> บันทึก
+            </button>
+            <a asp-action="Index" class="btn btn-outline-secondary">
+                <i class="bi bi-x-square"></i> ยกเลิก
+            </a>
+        </div>
+    </form>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+    <script src="~/js/fetchDistrict.js" asp-append-version="true"></script>
+    <script src="~/lib/cleave/dist/cleave.min.js" asp-append-version="true"></script>
+    <script src="~/js/inputZipcode.js" asp-append-version="true"></script>
+}

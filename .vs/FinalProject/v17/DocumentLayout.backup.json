@@ -1,0 +1,75 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\FulL_\\Desktop\\FinalProject\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{20088DAA-03EF-4EE6-94A8-717E85CB9D54}|FinalProject.csproj|c:\\users\\full_\\desktop\\finalproject\\helpers\\connectdb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{20088DAA-03EF-4EE6-94A8-717E85CB9D54}|FinalProject.csproj|solutionrelative:helpers\\connectdb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{20088DAA-03EF-4EE6-94A8-717E85CB9D54}|FinalProject.csproj|c:\\users\\full_\\desktop\\finalproject\\controllers\\receivegoodscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{20088DAA-03EF-4EE6-94A8-717E85CB9D54}|FinalProject.csproj|solutionrelative:controllers\\receivegoodscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{20088DAA-03EF-4EE6-94A8-717E85CB9D54}|FinalProject.csproj|c:\\users\\full_\\desktop\\finalproject\\controllers\\purchaseordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{20088DAA-03EF-4EE6-94A8-717E85CB9D54}|FinalProject.csproj|solutionrelative:controllers\\purchaseordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ConnectDb.cs",
+              "DocumentMoniker": "C:\\Users\\FulL_\\Desktop\\FinalProject\\Helpers\\ConnectDb.cs",
+              "RelativeDocumentMoniker": "Helpers\\ConnectDb.cs",
+              "ToolTip": "C:\\Users\\FulL_\\Desktop\\FinalProject\\Helpers\\ConnectDb.cs",
+              "RelativeToolTip": "Helpers\\ConnectDb.cs",
+              "ViewState": "AgIAABcAAAAAAAAAAAAUwCEAAABeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-19T06:41:17.288Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ReceiveGoodsController.cs",
+              "DocumentMoniker": "C:\\Users\\FulL_\\Desktop\\FinalProject\\Controllers\\ReceiveGoodsController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ReceiveGoodsController.cs",
+              "ToolTip": "C:\\Users\\FulL_\\Desktop\\FinalProject\\Controllers\\ReceiveGoodsController.cs",
+              "RelativeToolTip": "Controllers\\ReceiveGoodsController.cs",
+              "ViewState": "AgIAAF0FAAAAAAAAAAAuwA0FAAA+AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-19T05:45:41.218Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "PurchaseOrderController.cs",
+              "DocumentMoniker": "C:\\Users\\FulL_\\Desktop\\FinalProject\\Controllers\\PurchaseOrderController.cs",
+              "RelativeDocumentMoniker": "Controllers\\PurchaseOrderController.cs",
+              "ToolTip": "C:\\Users\\FulL_\\Desktop\\FinalProject\\Controllers\\PurchaseOrderController.cs",
+              "RelativeToolTip": "Controllers\\PurchaseOrderController.cs",
+              "ViewState": "AgIAAIgEAAAAAAAAAAAUwJYEAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-19T05:45:39.788Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,120 @@
+﻿@model FinalProject.Models.ViewModels.ReceiveGoodsViewModel
+
+@{
+    ViewData["Title"] = "ReceiveGoods";
+    int rows = 1;
+}
+<div class="row">
+    <h1 class="col text-primary mb-0">รายละเอียดใบรับสินค้า</h1>
+    <a asp-controller="ReceiveGoods" asp-action="ExportPDFById" asp-route-id="@Model.ReceiveGoodsId" class="col-auto btn btn-success align-content-center">
+        <i class="bi bi-download"></i> ดาวน์โหลด
+    </a>
+    <hr />
+</div>
+<div class="row p-3 pt-0">
+    <div class="col p-0">
+        <h4 class="mb-0">บริษัท กคข จำกัด (สำนักงานใหญ่)</h4>
+        <address class="mb-0">
+            149 หมู่ที่ 1 คลองบางบอน บางบอน กรุงเทพฯ 10150<br />
+            โทร.0-2222-2222<br />
+            เลขประจำตัวผู้เสียภาษี 01234567890123
+        </address>
+    </div>
+    <div class="col-3 p-0 text-center align-content-center">
+        <h1 class="text-primary mb-0">ใบรับสินค้า</h1>
+    </div>
+</div>
+<div class="row py-3 px-2 ms-1 mb-3 border rounded-4">
+    <div class="col p-0">
+        <p class="mb-0">
+            <strong>@Html.DisplayNameFor(Model => Model.SupplierName)</strong>
+            @Html.DisplayFor(Model => Model.SupplierName)
+        </p>
+        <address class="mb-0 p-0">
+            <strong>@Html.DisplayNameFor(Model => Model.SupplierAddress)</strong> @Html.DisplayFor(Model => Model.SupplierAddress)<br />
+            <strong>@Html.DisplayNameFor(Model => Model.SupplierPhoneNumber)</strong> @Html.DisplayFor(Model => Model.SupplierPhoneNumber)<br />
+            <strong>@Html.DisplayNameFor(Model => Model.SupplierTaxNumber)</strong> @Html.DisplayFor(Model => Model.FormattedTaxNumber)
+        </address>
+    </div>
+    <div class="col-1 p-0 pe-1 text-end border-end">
+        <p class="mb-0">
+            <strong>@Html.DisplayNameFor(Model => Model.ReceiveGoodsCode)</strong>
+            <br />
+            <strong>@Html.DisplayNameFor(Model => Model.ReceiveGoodsDate)</strong>
+            <br />
+            <strong>@Html.DisplayNameFor(Model => Model.EmployeeName)</strong>
+            <br />
+            <strong>@Html.DisplayNameFor(Model => Model.PurchaseOrderCode)</strong>
+        </p>
+    </div>
+    <div class="col-2 p-0 ps-1 text-start">
+        <p class="mb-0 text-truncate">
+            @Html.DisplayFor(Model => Model.ReceiveGoodsCode)
+            <br />
+            @Html.DisplayFor(Model => Model.ReceiveGoodsDate)
+            <br />
+            @Html.DisplayFor(Model => Model.EmployeeName)
+            <br />
+            @Html.DisplayFor(Model => Model.PurchaseOrderCode)
+        </p>
+    </div>
+</div>
+<div class="row ms-1">
+    <table class="table table-bordered table-hover rounded-top-4">
+        <thead class="align-middle text-center">
+            <tr>
+                <th style="width: 5.5%">ลำดับ</th>
+                <th style="width: 60.5%">@Html.DisplayNameFor(Model => Model.ReceiveGoodsDetails.First().ProductId)</th>
+                <th style="width: 10%">@Html.DisplayNameFor(Model => Model.ReceiveGoodsDetails.First().Quantity)</th>
+                <th style="width: 12%">@Html.DisplayNameFor(Model => Model.ReceiveGoodsDetails.First().Unitprice)</th>
+                <th style="width: 12%">@Html.DisplayNameFor(Model => Model.ReceiveGoodsDetails.First().Amount)</th>
+            </tr>
+        </thead>
+        <tbody>
+            @if (Model.ReceiveGoodsDetails.Any() || Model.ReceiveGoodsDetails.Count() > 0)
+            {
+                @foreach (var item in Model.ReceiveGoodsDetails)
+                {
+                    <tr>
+                        <td class="text-center">@rows</td>
+                        <td>@Html.DisplayFor(itemModel => item.ProductName)</td>
+                        <td class="text-end">@Html.DisplayFor(itemModel => item.Quantity)</td>
+                        <td class="text-end">@Html.DisplayFor(itemModel => item.Unitprice)</td>
+                        <td class="text-end">@Html.DisplayFor(itemModel => item.Amount)</td>
+                    </tr>
+                    rows++;
+                }
+            }
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="2" rowspan="2" class="align-top text-break">
+                    <strong>@Html.DisplayNameFor(Model => Model.Description) : </strong>@Html.DisplayFor(Model => Model.Description)
+                </td>
+                <th colspan="2" class="text-end">@Html.DisplayNameFor(Model => Model.Subtotal)</th>
+                <td class="text-end">@Html.DisplayFor(Model => Model.Subtotal)</td>
+            </tr>
+            <tr>
+                <th colspan="2" class="text-end">@Html.DisplayNameFor(Model => Model.Vat)</th>
+                <td colspan="2" class="text-end">@Html.DisplayFor(Model => Model.Vat)</td>
+            </tr>
+            <tr>
+                <th colspan="2" class="text-center">@Html.DisplayFor(Model => Model.NettotalText)</th>
+                <th colspan="2" class="text-end border-1" style="border-color: #dee2e6">@Html.DisplayNameFor(Model => Model.Nettotal)</th>
+                <td colspan="2" class="text-end border-1" style="border-color: #dee2e6">@Html.DisplayFor(Model => Model.Nettotal)</td>
+            </tr>
+        </tfoot>
+    </table>
+</div>
+<br />
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.ReceiveGoodsId" class="btn btn-outline-info">
+        <i class="bi bi-pencil-square"></i> แก้ไข
+    </a>
+    <a asp-action="Delete" asp-route-id="@Model.ReceiveGoodsId" class="btn btn-outline-danger">
+        <i class="bi bi-trash3"></i> ลบ
+    </a>
+    <a asp-action="Index" class="btn btn-outline-secondary">
+        <i class="bi bi-x-square"></i> ยกเลิก
+    </a>
+</div>

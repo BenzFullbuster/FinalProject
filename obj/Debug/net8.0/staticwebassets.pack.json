@@ -1,0 +1,1781 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\FinalProject.bundle.scp.css",
+      "PackagePath": "staticwebassets\\FinalProject.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\Rotativa\\wkhtmltoimage.exe",
+      "PackagePath": "staticwebassets\\Rotativa\\wkhtmltoimage.exe"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\Rotativa\\wkhtmltopdf.exe",
+      "PackagePath": "staticwebassets\\Rotativa\\wkhtmltopdf.exe"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\img\\AccessDenied_0.png",
+      "PackagePath": "staticwebassets\\img\\AccessDenied_0.png"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\img\\account_4817274_0.png",
+      "PackagePath": "staticwebassets\\img\\account_4817274_0.png"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\js\\dropdownProvince.js",
+      "PackagePath": "staticwebassets\\js\\dropdownProvince.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\js\\fetchCategory.js",
+      "PackagePath": "staticwebassets\\js\\fetchCategory.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\js\\fetchDistrict.js",
+      "PackagePath": "staticwebassets\\js\\fetchDistrict.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\js\\fetchEmployee.js",
+      "PackagePath": "staticwebassets\\js\\fetchEmployee.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\js\\fetchPosition.js",
+      "PackagePath": "staticwebassets\\js\\fetchPosition.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\js\\fetchProvince.js",
+      "PackagePath": "staticwebassets\\js\\fetchProvince.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\js\\fetchSupplier.js",
+      "PackagePath": "staticwebassets\\js\\fetchSupplier.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\js\\fetchUnit.js",
+      "PackagePath": "staticwebassets\\js\\fetchUnit.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\js\\inputNumber.js",
+      "PackagePath": "staticwebassets\\js\\inputNumber.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\js\\inputPhoneNumber.js",
+      "PackagePath": "staticwebassets\\js\\inputPhoneNumber.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\js\\intputTaxnumber.js",
+      "PackagePath": "staticwebassets\\js\\intputTaxnumber.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\js\\purchaseOrder.js",
+      "PackagePath": "staticwebassets\\js\\purchaseOrder.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\js\\receiveGoods.js",
+      "PackagePath": "staticwebassets\\js\\receiveGoods.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\js\\settimeoutAlerts.js",
+      "PackagePath": "staticwebassets\\js\\settimeoutAlerts.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\js\\topbtn.js",
+      "PackagePath": "staticwebassets\\js\\topbtn.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\bootstrap-datepicker\\css\\bootstrap-datepicker.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap-datepicker\\css\\bootstrap-datepicker.css"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\bootstrap-datepicker\\css\\bootstrap-datepicker.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap-datepicker\\css\\bootstrap-datepicker.css.map"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\bootstrap-datepicker\\css\\bootstrap-datepicker.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap-datepicker\\css\\bootstrap-datepicker.min.css"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\bootstrap-datepicker\\css\\bootstrap-datepicker.standalone.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap-datepicker\\css\\bootstrap-datepicker.standalone.css"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\bootstrap-datepicker\\css\\bootstrap-datepicker.standalone.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap-datepicker\\css\\bootstrap-datepicker.standalone.css.map"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\bootstrap-datepicker\\css\\bootstrap-datepicker.standalone.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap-datepicker\\css\\bootstrap-datepicker.standalone.min.css"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\bootstrap-datepicker\\css\\bootstrap-datepicker3.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap-datepicker\\css\\bootstrap-datepicker3.css"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\bootstrap-datepicker\\css\\bootstrap-datepicker3.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap-datepicker\\css\\bootstrap-datepicker3.css.map"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\bootstrap-datepicker\\css\\bootstrap-datepicker3.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap-datepicker\\css\\bootstrap-datepicker3.min.css"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\bootstrap-datepicker\\css\\bootstrap-datepicker3.standalone.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap-datepicker\\css\\bootstrap-datepicker3.standalone.css"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\bootstrap-datepicker\\css\\bootstrap-datepicker3.standalone.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap-datepicker\\css\\bootstrap-datepicker3.standalone.css.map"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\bootstrap-datepicker\\css\\bootstrap-datepicker3.standalone.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap-datepicker\\css\\bootstrap-datepicker3.standalone.min.css"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\bootstrap-datepicker\\js\\bootstrap-datepicker.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap-datepicker\\js\\bootstrap-datepicker.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\bootstrap-datepicker\\js\\bootstrap-datepicker.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap-datepicker\\js\\bootstrap-datepicker.min.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\bootstrap-datepicker\\locales\\bootstrap-datepicker-en-CA.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap-datepicker\\locales\\bootstrap-datepicker-en-CA.min.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\bootstrap-datepicker\\locales\\bootstrap-datepicker.ar-tn.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap-datepicker\\locales\\bootstrap-datepicker.ar-tn.min.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\bootstrap-datepicker\\locales\\bootstrap-datepicker.ar.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap-datepicker\\locales\\bootstrap-datepicker.ar.min.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\bootstrap-datepicker\\locales\\bootstrap-datepicker.az.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap-datepicker\\locales\\bootstrap-datepicker.az.min.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\bootstrap-datepicker\\locales\\bootstrap-datepicker.bg.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap-datepicker\\locales\\bootstrap-datepicker.bg.min.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\bootstrap-datepicker\\locales\\bootstrap-datepicker.bm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap-datepicker\\locales\\bootstrap-datepicker.bm.min.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\bootstrap-datepicker\\locales\\bootstrap-datepicker.bn.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap-datepicker\\locales\\bootstrap-datepicker.bn.min.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\bootstrap-datepicker\\locales\\bootstrap-datepicker.br.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap-datepicker\\locales\\bootstrap-datepicker.br.min.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\bootstrap-datepicker\\locales\\bootstrap-datepicker.bs.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap-datepicker\\locales\\bootstrap-datepicker.bs.min.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\bootstrap-datepicker\\locales\\bootstrap-datepicker.ca.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap-datepicker\\locales\\bootstrap-datepicker.ca.min.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\bootstrap-datepicker\\locales\\bootstrap-datepicker.cs.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap-datepicker\\locales\\bootstrap-datepicker.cs.min.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\bootstrap-datepicker\\locales\\bootstrap-datepicker.cy.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap-datepicker\\locales\\bootstrap-datepicker.cy.min.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\bootstrap-datepicker\\locales\\bootstrap-datepicker.da.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap-datepicker\\locales\\bootstrap-datepicker.da.min.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\bootstrap-datepicker\\locales\\bootstrap-datepicker.de.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap-datepicker\\locales\\bootstrap-datepicker.de.min.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\bootstrap-datepicker\\locales\\bootstrap-datepicker.el.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap-datepicker\\locales\\bootstrap-datepicker.el.min.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\bootstrap-datepicker\\locales\\bootstrap-datepicker.en-AU.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap-datepicker\\locales\\bootstrap-datepicker.en-AU.min.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\bootstrap-datepicker\\locales\\bootstrap-datepicker.en-CA.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap-datepicker\\locales\\bootstrap-datepicker.en-CA.min.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\bootstrap-datepicker\\locales\\bootstrap-datepicker.en-GB.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap-datepicker\\locales\\bootstrap-datepicker.en-GB.min.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\bootstrap-datepicker\\locales\\bootstrap-datepicker.en-IE.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap-datepicker\\locales\\bootstrap-datepicker.en-IE.min.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\bootstrap-datepicker\\locales\\bootstrap-datepicker.en-NZ.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap-datepicker\\locales\\bootstrap-datepicker.en-NZ.min.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\bootstrap-datepicker\\locales\\bootstrap-datepicker.en-ZA.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap-datepicker\\locales\\bootstrap-datepicker.en-ZA.min.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\bootstrap-datepicker\\locales\\bootstrap-datepicker.eo.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap-datepicker\\locales\\bootstrap-datepicker.eo.min.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\bootstrap-datepicker\\locales\\bootstrap-datepicker.es.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap-datepicker\\locales\\bootstrap-datepicker.es.min.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\bootstrap-datepicker\\locales\\bootstrap-datepicker.et.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap-datepicker\\locales\\bootstrap-datepicker.et.min.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\bootstrap-datepicker\\locales\\bootstrap-datepicker.eu.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap-datepicker\\locales\\bootstrap-datepicker.eu.min.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\bootstrap-datepicker\\locales\\bootstrap-datepicker.fa.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap-datepicker\\locales\\bootstrap-datepicker.fa.min.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\bootstrap-datepicker\\locales\\bootstrap-datepicker.fi.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap-datepicker\\locales\\bootstrap-datepicker.fi.min.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\bootstrap-datepicker\\locales\\bootstrap-datepicker.fo.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap-datepicker\\locales\\bootstrap-datepicker.fo.min.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\bootstrap-datepicker\\locales\\bootstrap-datepicker.fr-CH.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap-datepicker\\locales\\bootstrap-datepicker.fr-CH.min.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\bootstrap-datepicker\\locales\\bootstrap-datepicker.fr.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap-datepicker\\locales\\bootstrap-datepicker.fr.min.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\bootstrap-datepicker\\locales\\bootstrap-datepicker.gl.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap-datepicker\\locales\\bootstrap-datepicker.gl.min.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\bootstrap-datepicker\\locales\\bootstrap-datepicker.he.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap-datepicker\\locales\\bootstrap-datepicker.he.min.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\bootstrap-datepicker\\locales\\bootstrap-datepicker.hi.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap-datepicker\\locales\\bootstrap-datepicker.hi.min.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\bootstrap-datepicker\\locales\\bootstrap-datepicker.hr.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap-datepicker\\locales\\bootstrap-datepicker.hr.min.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\bootstrap-datepicker\\locales\\bootstrap-datepicker.hu.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap-datepicker\\locales\\bootstrap-datepicker.hu.min.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\bootstrap-datepicker\\locales\\bootstrap-datepicker.hy.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap-datepicker\\locales\\bootstrap-datepicker.hy.min.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\bootstrap-datepicker\\locales\\bootstrap-datepicker.id.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap-datepicker\\locales\\bootstrap-datepicker.id.min.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\bootstrap-datepicker\\locales\\bootstrap-datepicker.is.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap-datepicker\\locales\\bootstrap-datepicker.is.min.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\bootstrap-datepicker\\locales\\bootstrap-datepicker.it-CH.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap-datepicker\\locales\\bootstrap-datepicker.it-CH.min.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\bootstrap-datepicker\\locales\\bootstrap-datepicker.it.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap-datepicker\\locales\\bootstrap-datepicker.it.min.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\bootstrap-datepicker\\locales\\bootstrap-datepicker.ja.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap-datepicker\\locales\\bootstrap-datepicker.ja.min.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\bootstrap-datepicker\\locales\\bootstrap-datepicker.ka.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap-datepicker\\locales\\bootstrap-datepicker.ka.min.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\bootstrap-datepicker\\locales\\bootstrap-datepicker.kh.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap-datepicker\\locales\\bootstrap-datepicker.kh.min.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\bootstrap-datepicker\\locales\\bootstrap-datepicker.kk.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap-datepicker\\locales\\bootstrap-datepicker.kk.min.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\bootstrap-datepicker\\locales\\bootstrap-datepicker.km.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap-datepicker\\locales\\bootstrap-datepicker.km.min.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\bootstrap-datepicker\\locales\\bootstrap-datepicker.ko.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap-datepicker\\locales\\bootstrap-datepicker.ko.min.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\bootstrap-datepicker\\locales\\bootstrap-datepicker.kr.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap-datepicker\\locales\\bootstrap-datepicker.kr.min.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\bootstrap-datepicker\\locales\\bootstrap-datepicker.lt.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap-datepicker\\locales\\bootstrap-datepicker.lt.min.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\bootstrap-datepicker\\locales\\bootstrap-datepicker.lv.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap-datepicker\\locales\\bootstrap-datepicker.lv.min.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\bootstrap-datepicker\\locales\\bootstrap-datepicker.me.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap-datepicker\\locales\\bootstrap-datepicker.me.min.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\bootstrap-datepicker\\locales\\bootstrap-datepicker.mk.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap-datepicker\\locales\\bootstrap-datepicker.mk.min.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\bootstrap-datepicker\\locales\\bootstrap-datepicker.mn.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap-datepicker\\locales\\bootstrap-datepicker.mn.min.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\bootstrap-datepicker\\locales\\bootstrap-datepicker.ms.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap-datepicker\\locales\\bootstrap-datepicker.ms.min.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\bootstrap-datepicker\\locales\\bootstrap-datepicker.nl-BE.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap-datepicker\\locales\\bootstrap-datepicker.nl-BE.min.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\bootstrap-datepicker\\locales\\bootstrap-datepicker.nl.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap-datepicker\\locales\\bootstrap-datepicker.nl.min.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\bootstrap-datepicker\\locales\\bootstrap-datepicker.no.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap-datepicker\\locales\\bootstrap-datepicker.no.min.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\bootstrap-datepicker\\locales\\bootstrap-datepicker.oc.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap-datepicker\\locales\\bootstrap-datepicker.oc.min.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\bootstrap-datepicker\\locales\\bootstrap-datepicker.pl.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap-datepicker\\locales\\bootstrap-datepicker.pl.min.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\bootstrap-datepicker\\locales\\bootstrap-datepicker.pt-BR.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap-datepicker\\locales\\bootstrap-datepicker.pt-BR.min.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\bootstrap-datepicker\\locales\\bootstrap-datepicker.pt.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap-datepicker\\locales\\bootstrap-datepicker.pt.min.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\bootstrap-datepicker\\locales\\bootstrap-datepicker.ro.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap-datepicker\\locales\\bootstrap-datepicker.ro.min.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\bootstrap-datepicker\\locales\\bootstrap-datepicker.rs-latin.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap-datepicker\\locales\\bootstrap-datepicker.rs-latin.min.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\bootstrap-datepicker\\locales\\bootstrap-datepicker.rs.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap-datepicker\\locales\\bootstrap-datepicker.rs.min.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\bootstrap-datepicker\\locales\\bootstrap-datepicker.ru.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap-datepicker\\locales\\bootstrap-datepicker.ru.min.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\bootstrap-datepicker\\locales\\bootstrap-datepicker.si.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap-datepicker\\locales\\bootstrap-datepicker.si.min.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\bootstrap-datepicker\\locales\\bootstrap-datepicker.sk.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap-datepicker\\locales\\bootstrap-datepicker.sk.min.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\bootstrap-datepicker\\locales\\bootstrap-datepicker.sl.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap-datepicker\\locales\\bootstrap-datepicker.sl.min.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\bootstrap-datepicker\\locales\\bootstrap-datepicker.sq.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap-datepicker\\locales\\bootstrap-datepicker.sq.min.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\bootstrap-datepicker\\locales\\bootstrap-datepicker.sr-latin.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap-datepicker\\locales\\bootstrap-datepicker.sr-latin.min.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\bootstrap-datepicker\\locales\\bootstrap-datepicker.sr.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap-datepicker\\locales\\bootstrap-datepicker.sr.min.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\bootstrap-datepicker\\locales\\bootstrap-datepicker.sv.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap-datepicker\\locales\\bootstrap-datepicker.sv.min.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\bootstrap-datepicker\\locales\\bootstrap-datepicker.sw.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap-datepicker\\locales\\bootstrap-datepicker.sw.min.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\bootstrap-datepicker\\locales\\bootstrap-datepicker.ta.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap-datepicker\\locales\\bootstrap-datepicker.ta.min.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\bootstrap-datepicker\\locales\\bootstrap-datepicker.tg.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap-datepicker\\locales\\bootstrap-datepicker.tg.min.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\bootstrap-datepicker\\locales\\bootstrap-datepicker.th.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap-datepicker\\locales\\bootstrap-datepicker.th.min.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\bootstrap-datepicker\\locales\\bootstrap-datepicker.tk.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap-datepicker\\locales\\bootstrap-datepicker.tk.min.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\bootstrap-datepicker\\locales\\bootstrap-datepicker.tr.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap-datepicker\\locales\\bootstrap-datepicker.tr.min.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\bootstrap-datepicker\\locales\\bootstrap-datepicker.uk.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap-datepicker\\locales\\bootstrap-datepicker.uk.min.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\bootstrap-datepicker\\locales\\bootstrap-datepicker.uz-cyrl.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap-datepicker\\locales\\bootstrap-datepicker.uz-cyrl.min.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\bootstrap-datepicker\\locales\\bootstrap-datepicker.uz-latn.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap-datepicker\\locales\\bootstrap-datepicker.uz-latn.min.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\bootstrap-datepicker\\locales\\bootstrap-datepicker.vi.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap-datepicker\\locales\\bootstrap-datepicker.vi.min.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\bootstrap-datepicker\\locales\\bootstrap-datepicker.zh-CN.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap-datepicker\\locales\\bootstrap-datepicker.zh-CN.min.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\bootstrap-datepicker\\locales\\bootstrap-datepicker.zh-TW.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap-datepicker\\locales\\bootstrap-datepicker.zh-TW.min.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\bootstrap-icons\\css\\bootstrap-icons.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap-icons\\css\\bootstrap-icons.css"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\bootstrap-icons\\css\\bootstrap-icons.json",
+      "PackagePath": "staticwebassets\\lib\\bootstrap-icons\\css\\bootstrap-icons.json"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\bootstrap-icons\\css\\bootstrap-icons.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap-icons\\css\\bootstrap-icons.min.css"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\bootstrap-icons\\css\\bootstrap-icons.scss",
+      "PackagePath": "staticwebassets\\lib\\bootstrap-icons\\css\\bootstrap-icons.scss"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\bootstrap-icons\\css\\fonts\\bootstrap-icons.woff",
+      "PackagePath": "staticwebassets\\lib\\bootstrap-icons\\css\\fonts\\bootstrap-icons.woff"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\bootstrap-icons\\css\\fonts\\bootstrap-icons.woff2",
+      "PackagePath": "staticwebassets\\lib\\bootstrap-icons\\css\\fonts\\bootstrap-icons.woff2"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\cleave\\dist\\addons\\cleave-phone.ac.js",
+      "PackagePath": "staticwebassets\\lib\\cleave\\dist\\addons\\cleave-phone.ac.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\cleave\\dist\\addons\\cleave-phone.ad.js",
+      "PackagePath": "staticwebassets\\lib\\cleave\\dist\\addons\\cleave-phone.ad.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\cleave\\dist\\addons\\cleave-phone.ae.js",
+      "PackagePath": "staticwebassets\\lib\\cleave\\dist\\addons\\cleave-phone.ae.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\cleave\\dist\\addons\\cleave-phone.af.js",
+      "PackagePath": "staticwebassets\\lib\\cleave\\dist\\addons\\cleave-phone.af.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\cleave\\dist\\addons\\cleave-phone.ag.js",
+      "PackagePath": "staticwebassets\\lib\\cleave\\dist\\addons\\cleave-phone.ag.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\cleave\\dist\\addons\\cleave-phone.ai.js",
+      "PackagePath": "staticwebassets\\lib\\cleave\\dist\\addons\\cleave-phone.ai.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\cleave\\dist\\addons\\cleave-phone.al.js",
+      "PackagePath": "staticwebassets\\lib\\cleave\\dist\\addons\\cleave-phone.al.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\cleave\\dist\\addons\\cleave-phone.am.js",
+      "PackagePath": "staticwebassets\\lib\\cleave\\dist\\addons\\cleave-phone.am.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\cleave\\dist\\addons\\cleave-phone.ao.js",
+      "PackagePath": "staticwebassets\\lib\\cleave\\dist\\addons\\cleave-phone.ao.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\cleave\\dist\\addons\\cleave-phone.ar.js",
+      "PackagePath": "staticwebassets\\lib\\cleave\\dist\\addons\\cleave-phone.ar.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\cleave\\dist\\addons\\cleave-phone.as.js",
+      "PackagePath": "staticwebassets\\lib\\cleave\\dist\\addons\\cleave-phone.as.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\cleave\\dist\\addons\\cleave-phone.at.js",
+      "PackagePath": "staticwebassets\\lib\\cleave\\dist\\addons\\cleave-phone.at.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\cleave\\dist\\addons\\cleave-phone.au-cn.js",
+      "PackagePath": "staticwebassets\\lib\\cleave\\dist\\addons\\cleave-phone.au-cn.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\cleave\\dist\\addons\\cleave-phone.au.js",
+      "PackagePath": "staticwebassets\\lib\\cleave\\dist\\addons\\cleave-phone.au.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\cleave\\dist\\addons\\cleave-phone.aw.js",
+      "PackagePath": "staticwebassets\\lib\\cleave\\dist\\addons\\cleave-phone.aw.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\cleave\\dist\\addons\\cleave-phone.ax.js",
+      "PackagePath": "staticwebassets\\lib\\cleave\\dist\\addons\\cleave-phone.ax.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\cleave\\dist\\addons\\cleave-phone.az.js",
+      "PackagePath": "staticwebassets\\lib\\cleave\\dist\\addons\\cleave-phone.az.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\cleave\\dist\\addons\\cleave-phone.ba.js",
+      "PackagePath": "staticwebassets\\lib\\cleave\\dist\\addons\\cleave-phone.ba.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\cleave\\dist\\addons\\cleave-phone.bb.js",
+      "PackagePath": "staticwebassets\\lib\\cleave\\dist\\addons\\cleave-phone.bb.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\cleave\\dist\\addons\\cleave-phone.bd.js",
+      "PackagePath": "staticwebassets\\lib\\cleave\\dist\\addons\\cleave-phone.bd.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\cleave\\dist\\addons\\cleave-phone.be.js",
+      "PackagePath": "staticwebassets\\lib\\cleave\\dist\\addons\\cleave-phone.be.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\cleave\\dist\\addons\\cleave-phone.bf.js",
+      "PackagePath": "staticwebassets\\lib\\cleave\\dist\\addons\\cleave-phone.bf.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\cleave\\dist\\addons\\cleave-phone.bg.js",
+      "PackagePath": "staticwebassets\\lib\\cleave\\dist\\addons\\cleave-phone.bg.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\cleave\\dist\\addons\\cleave-phone.bh.js",
+      "PackagePath": "staticwebassets\\lib\\cleave\\dist\\addons\\cleave-phone.bh.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\cleave\\dist\\addons\\cleave-phone.bi.js",
+      "PackagePath": "staticwebassets\\lib\\cleave\\dist\\addons\\cleave-phone.bi.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\cleave\\dist\\addons\\cleave-phone.bj.js",
+      "PackagePath": "staticwebassets\\lib\\cleave\\dist\\addons\\cleave-phone.bj.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\cleave\\dist\\addons\\cleave-phone.bl.js",
+      "PackagePath": "staticwebassets\\lib\\cleave\\dist\\addons\\cleave-phone.bl.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\cleave\\dist\\addons\\cleave-phone.bm.js",
+      "PackagePath": "staticwebassets\\lib\\cleave\\dist\\addons\\cleave-phone.bm.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\cleave\\dist\\addons\\cleave-phone.bn.js",
+      "PackagePath": "staticwebassets\\lib\\cleave\\dist\\addons\\cleave-phone.bn.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\cleave\\dist\\addons\\cleave-phone.bo.js",
+      "PackagePath": "staticwebassets\\lib\\cleave\\dist\\addons\\cleave-phone.bo.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\cleave\\dist\\addons\\cleave-phone.bq.js",
+      "PackagePath": "staticwebassets\\lib\\cleave\\dist\\addons\\cleave-phone.bq.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\cleave\\dist\\addons\\cleave-phone.br.js",
+      "PackagePath": "staticwebassets\\lib\\cleave\\dist\\addons\\cleave-phone.br.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\cleave\\dist\\addons\\cleave-phone.bs.js",
+      "PackagePath": "staticwebassets\\lib\\cleave\\dist\\addons\\cleave-phone.bs.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\cleave\\dist\\addons\\cleave-phone.bt.js",
+      "PackagePath": "staticwebassets\\lib\\cleave\\dist\\addons\\cleave-phone.bt.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\cleave\\dist\\addons\\cleave-phone.bw.js",
+      "PackagePath": "staticwebassets\\lib\\cleave\\dist\\addons\\cleave-phone.bw.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\cleave\\dist\\addons\\cleave-phone.by.js",
+      "PackagePath": "staticwebassets\\lib\\cleave\\dist\\addons\\cleave-phone.by.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\cleave\\dist\\addons\\cleave-phone.bz.js",
+      "PackagePath": "staticwebassets\\lib\\cleave\\dist\\addons\\cleave-phone.bz.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\cleave\\dist\\addons\\cleave-phone.ca.js",
+      "PackagePath": "staticwebassets\\lib\\cleave\\dist\\addons\\cleave-phone.ca.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\cleave\\dist\\addons\\cleave-phone.cc.js",
+      "PackagePath": "staticwebassets\\lib\\cleave\\dist\\addons\\cleave-phone.cc.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\cleave\\dist\\addons\\cleave-phone.cd.js",
+      "PackagePath": "staticwebassets\\lib\\cleave\\dist\\addons\\cleave-phone.cd.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\cleave\\dist\\addons\\cleave-phone.cf.js",
+      "PackagePath": "staticwebassets\\lib\\cleave\\dist\\addons\\cleave-phone.cf.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\cleave\\dist\\addons\\cleave-phone.cg.js",
+      "PackagePath": "staticwebassets\\lib\\cleave\\dist\\addons\\cleave-phone.cg.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\cleave\\dist\\addons\\cleave-phone.ch.js",
+      "PackagePath": "staticwebassets\\lib\\cleave\\dist\\addons\\cleave-phone.ch.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\cleave\\dist\\addons\\cleave-phone.ci.js",
+      "PackagePath": "staticwebassets\\lib\\cleave\\dist\\addons\\cleave-phone.ci.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\cleave\\dist\\addons\\cleave-phone.ck.js",
+      "PackagePath": "staticwebassets\\lib\\cleave\\dist\\addons\\cleave-phone.ck.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\cleave\\dist\\addons\\cleave-phone.cl.js",
+      "PackagePath": "staticwebassets\\lib\\cleave\\dist\\addons\\cleave-phone.cl.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\cleave\\dist\\addons\\cleave-phone.cm.js",
+      "PackagePath": "staticwebassets\\lib\\cleave\\dist\\addons\\cleave-phone.cm.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\cleave\\dist\\addons\\cleave-phone.cn.js",
+      "PackagePath": "staticwebassets\\lib\\cleave\\dist\\addons\\cleave-phone.cn.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\cleave\\dist\\addons\\cleave-phone.co.js",
+      "PackagePath": "staticwebassets\\lib\\cleave\\dist\\addons\\cleave-phone.co.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\cleave\\dist\\addons\\cleave-phone.cr.js",
+      "PackagePath": "staticwebassets\\lib\\cleave\\dist\\addons\\cleave-phone.cr.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\cleave\\dist\\addons\\cleave-phone.cu.js",
+      "PackagePath": "staticwebassets\\lib\\cleave\\dist\\addons\\cleave-phone.cu.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\cleave\\dist\\addons\\cleave-phone.cv.js",
+      "PackagePath": "staticwebassets\\lib\\cleave\\dist\\addons\\cleave-phone.cv.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\cleave\\dist\\addons\\cleave-phone.cw.js",
+      "PackagePath": "staticwebassets\\lib\\cleave\\dist\\addons\\cleave-phone.cw.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\cleave\\dist\\addons\\cleave-phone.cx.js",
+      "PackagePath": "staticwebassets\\lib\\cleave\\dist\\addons\\cleave-phone.cx.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\cleave\\dist\\addons\\cleave-phone.cy.js",
+      "PackagePath": "staticwebassets\\lib\\cleave\\dist\\addons\\cleave-phone.cy.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\cleave\\dist\\addons\\cleave-phone.cz.js",
+      "PackagePath": "staticwebassets\\lib\\cleave\\dist\\addons\\cleave-phone.cz.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\cleave\\dist\\addons\\cleave-phone.de.js",
+      "PackagePath": "staticwebassets\\lib\\cleave\\dist\\addons\\cleave-phone.de.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\cleave\\dist\\addons\\cleave-phone.dj.js",
+      "PackagePath": "staticwebassets\\lib\\cleave\\dist\\addons\\cleave-phone.dj.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\cleave\\dist\\addons\\cleave-phone.dk.js",
+      "PackagePath": "staticwebassets\\lib\\cleave\\dist\\addons\\cleave-phone.dk.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\cleave\\dist\\addons\\cleave-phone.dm.js",
+      "PackagePath": "staticwebassets\\lib\\cleave\\dist\\addons\\cleave-phone.dm.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\cleave\\dist\\addons\\cleave-phone.do.js",
+      "PackagePath": "staticwebassets\\lib\\cleave\\dist\\addons\\cleave-phone.do.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\cleave\\dist\\addons\\cleave-phone.dz.js",
+      "PackagePath": "staticwebassets\\lib\\cleave\\dist\\addons\\cleave-phone.dz.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\cleave\\dist\\addons\\cleave-phone.ec.js",
+      "PackagePath": "staticwebassets\\lib\\cleave\\dist\\addons\\cleave-phone.ec.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\cleave\\dist\\addons\\cleave-phone.ee.js",
+      "PackagePath": "staticwebassets\\lib\\cleave\\dist\\addons\\cleave-phone.ee.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\cleave\\dist\\addons\\cleave-phone.eg.js",
+      "PackagePath": "staticwebassets\\lib\\cleave\\dist\\addons\\cleave-phone.eg.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\cleave\\dist\\addons\\cleave-phone.eh.js",
+      "PackagePath": "staticwebassets\\lib\\cleave\\dist\\addons\\cleave-phone.eh.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\cleave\\dist\\addons\\cleave-phone.er.js",
+      "PackagePath": "staticwebassets\\lib\\cleave\\dist\\addons\\cleave-phone.er.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\cleave\\dist\\addons\\cleave-phone.es.js",
+      "PackagePath": "staticwebassets\\lib\\cleave\\dist\\addons\\cleave-phone.es.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\cleave\\dist\\addons\\cleave-phone.et.js",
+      "PackagePath": "staticwebassets\\lib\\cleave\\dist\\addons\\cleave-phone.et.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\cleave\\dist\\addons\\cleave-phone.fi.js",
+      "PackagePath": "staticwebassets\\lib\\cleave\\dist\\addons\\cleave-phone.fi.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\cleave\\dist\\addons\\cleave-phone.fj.js",
+      "PackagePath": "staticwebassets\\lib\\cleave\\dist\\addons\\cleave-phone.fj.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\cleave\\dist\\addons\\cleave-phone.fk.js",
+      "PackagePath": "staticwebassets\\lib\\cleave\\dist\\addons\\cleave-phone.fk.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\cleave\\dist\\addons\\cleave-phone.fm.js",
+      "PackagePath": "staticwebassets\\lib\\cleave\\dist\\addons\\cleave-phone.fm.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\cleave\\dist\\addons\\cleave-phone.fo.js",
+      "PackagePath": "staticwebassets\\lib\\cleave\\dist\\addons\\cleave-phone.fo.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\cleave\\dist\\addons\\cleave-phone.fr.js",
+      "PackagePath": "staticwebassets\\lib\\cleave\\dist\\addons\\cleave-phone.fr.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\cleave\\dist\\addons\\cleave-phone.ga.js",
+      "PackagePath": "staticwebassets\\lib\\cleave\\dist\\addons\\cleave-phone.ga.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\cleave\\dist\\addons\\cleave-phone.gb.js",
+      "PackagePath": "staticwebassets\\lib\\cleave\\dist\\addons\\cleave-phone.gb.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\cleave\\dist\\addons\\cleave-phone.gd.js",
+      "PackagePath": "staticwebassets\\lib\\cleave\\dist\\addons\\cleave-phone.gd.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\cleave\\dist\\addons\\cleave-phone.ge.js",
+      "PackagePath": "staticwebassets\\lib\\cleave\\dist\\addons\\cleave-phone.ge.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\cleave\\dist\\addons\\cleave-phone.gf.js",
+      "PackagePath": "staticwebassets\\lib\\cleave\\dist\\addons\\cleave-phone.gf.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\cleave\\dist\\addons\\cleave-phone.gg.js",
+      "PackagePath": "staticwebassets\\lib\\cleave\\dist\\addons\\cleave-phone.gg.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\cleave\\dist\\addons\\cleave-phone.gh.js",
+      "PackagePath": "staticwebassets\\lib\\cleave\\dist\\addons\\cleave-phone.gh.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\cleave\\dist\\addons\\cleave-phone.gi.js",
+      "PackagePath": "staticwebassets\\lib\\cleave\\dist\\addons\\cleave-phone.gi.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\cleave\\dist\\addons\\cleave-phone.gl.js",
+      "PackagePath": "staticwebassets\\lib\\cleave\\dist\\addons\\cleave-phone.gl.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\cleave\\dist\\addons\\cleave-phone.gm.js",
+      "PackagePath": "staticwebassets\\lib\\cleave\\dist\\addons\\cleave-phone.gm.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\cleave\\dist\\addons\\cleave-phone.gn.js",
+      "PackagePath": "staticwebassets\\lib\\cleave\\dist\\addons\\cleave-phone.gn.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\cleave\\dist\\addons\\cleave-phone.gp.js",
+      "PackagePath": "staticwebassets\\lib\\cleave\\dist\\addons\\cleave-phone.gp.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\cleave\\dist\\addons\\cleave-phone.gq.js",
+      "PackagePath": "staticwebassets\\lib\\cleave\\dist\\addons\\cleave-phone.gq.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\cleave\\dist\\addons\\cleave-phone.gr.js",
+      "PackagePath": "staticwebassets\\lib\\cleave\\dist\\addons\\cleave-phone.gr.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\cleave\\dist\\addons\\cleave-phone.gt.js",
+      "PackagePath": "staticwebassets\\lib\\cleave\\dist\\addons\\cleave-phone.gt.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\cleave\\dist\\addons\\cleave-phone.gu.js",
+      "PackagePath": "staticwebassets\\lib\\cleave\\dist\\addons\\cleave-phone.gu.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\cleave\\dist\\addons\\cleave-phone.gw.js",
+      "PackagePath": "staticwebassets\\lib\\cleave\\dist\\addons\\cleave-phone.gw.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\cleave\\dist\\addons\\cleave-phone.gy.js",
+      "PackagePath": "staticwebassets\\lib\\cleave\\dist\\addons\\cleave-phone.gy.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\cleave\\dist\\addons\\cleave-phone.hk.js",
+      "PackagePath": "staticwebassets\\lib\\cleave\\dist\\addons\\cleave-phone.hk.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\cleave\\dist\\addons\\cleave-phone.hn.js",
+      "PackagePath": "staticwebassets\\lib\\cleave\\dist\\addons\\cleave-phone.hn.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\cleave\\dist\\addons\\cleave-phone.hr.js",
+      "PackagePath": "staticwebassets\\lib\\cleave\\dist\\addons\\cleave-phone.hr.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\cleave\\dist\\addons\\cleave-phone.ht.js",
+      "PackagePath": "staticwebassets\\lib\\cleave\\dist\\addons\\cleave-phone.ht.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\cleave\\dist\\addons\\cleave-phone.hu.js",
+      "PackagePath": "staticwebassets\\lib\\cleave\\dist\\addons\\cleave-phone.hu.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\cleave\\dist\\addons\\cleave-phone.i18n.js",
+      "PackagePath": "staticwebassets\\lib\\cleave\\dist\\addons\\cleave-phone.i18n.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\cleave\\dist\\addons\\cleave-phone.id.js",
+      "PackagePath": "staticwebassets\\lib\\cleave\\dist\\addons\\cleave-phone.id.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\cleave\\dist\\addons\\cleave-phone.ie.js",
+      "PackagePath": "staticwebassets\\lib\\cleave\\dist\\addons\\cleave-phone.ie.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\cleave\\dist\\addons\\cleave-phone.il.js",
+      "PackagePath": "staticwebassets\\lib\\cleave\\dist\\addons\\cleave-phone.il.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\cleave\\dist\\addons\\cleave-phone.im.js",
+      "PackagePath": "staticwebassets\\lib\\cleave\\dist\\addons\\cleave-phone.im.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\cleave\\dist\\addons\\cleave-phone.in.js",
+      "PackagePath": "staticwebassets\\lib\\cleave\\dist\\addons\\cleave-phone.in.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\cleave\\dist\\addons\\cleave-phone.io.js",
+      "PackagePath": "staticwebassets\\lib\\cleave\\dist\\addons\\cleave-phone.io.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\cleave\\dist\\addons\\cleave-phone.iq.js",
+      "PackagePath": "staticwebassets\\lib\\cleave\\dist\\addons\\cleave-phone.iq.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\cleave\\dist\\addons\\cleave-phone.ir.js",
+      "PackagePath": "staticwebassets\\lib\\cleave\\dist\\addons\\cleave-phone.ir.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\cleave\\dist\\addons\\cleave-phone.is.js",
+      "PackagePath": "staticwebassets\\lib\\cleave\\dist\\addons\\cleave-phone.is.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\cleave\\dist\\addons\\cleave-phone.it.js",
+      "PackagePath": "staticwebassets\\lib\\cleave\\dist\\addons\\cleave-phone.it.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\cleave\\dist\\addons\\cleave-phone.je.js",
+      "PackagePath": "staticwebassets\\lib\\cleave\\dist\\addons\\cleave-phone.je.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\cleave\\dist\\addons\\cleave-phone.jm.js",
+      "PackagePath": "staticwebassets\\lib\\cleave\\dist\\addons\\cleave-phone.jm.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\cleave\\dist\\addons\\cleave-phone.jo.js",
+      "PackagePath": "staticwebassets\\lib\\cleave\\dist\\addons\\cleave-phone.jo.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\cleave\\dist\\addons\\cleave-phone.jp.js",
+      "PackagePath": "staticwebassets\\lib\\cleave\\dist\\addons\\cleave-phone.jp.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\cleave\\dist\\addons\\cleave-phone.ke.js",
+      "PackagePath": "staticwebassets\\lib\\cleave\\dist\\addons\\cleave-phone.ke.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\cleave\\dist\\addons\\cleave-phone.kg.js",
+      "PackagePath": "staticwebassets\\lib\\cleave\\dist\\addons\\cleave-phone.kg.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\cleave\\dist\\addons\\cleave-phone.kh.js",
+      "PackagePath": "staticwebassets\\lib\\cleave\\dist\\addons\\cleave-phone.kh.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\cleave\\dist\\addons\\cleave-phone.ki.js",
+      "PackagePath": "staticwebassets\\lib\\cleave\\dist\\addons\\cleave-phone.ki.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\cleave\\dist\\addons\\cleave-phone.km.js",
+      "PackagePath": "staticwebassets\\lib\\cleave\\dist\\addons\\cleave-phone.km.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\cleave\\dist\\addons\\cleave-phone.kn.js",
+      "PackagePath": "staticwebassets\\lib\\cleave\\dist\\addons\\cleave-phone.kn.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\cleave\\dist\\addons\\cleave-phone.kp.js",
+      "PackagePath": "staticwebassets\\lib\\cleave\\dist\\addons\\cleave-phone.kp.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\cleave\\dist\\addons\\cleave-phone.kr.js",
+      "PackagePath": "staticwebassets\\lib\\cleave\\dist\\addons\\cleave-phone.kr.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\cleave\\dist\\addons\\cleave-phone.kw.js",
+      "PackagePath": "staticwebassets\\lib\\cleave\\dist\\addons\\cleave-phone.kw.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\cleave\\dist\\addons\\cleave-phone.ky.js",
+      "PackagePath": "staticwebassets\\lib\\cleave\\dist\\addons\\cleave-phone.ky.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\cleave\\dist\\addons\\cleave-phone.kz.js",
+      "PackagePath": "staticwebassets\\lib\\cleave\\dist\\addons\\cleave-phone.kz.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\cleave\\dist\\addons\\cleave-phone.la.js",
+      "PackagePath": "staticwebassets\\lib\\cleave\\dist\\addons\\cleave-phone.la.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\cleave\\dist\\addons\\cleave-phone.lb.js",
+      "PackagePath": "staticwebassets\\lib\\cleave\\dist\\addons\\cleave-phone.lb.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\cleave\\dist\\addons\\cleave-phone.lc.js",
+      "PackagePath": "staticwebassets\\lib\\cleave\\dist\\addons\\cleave-phone.lc.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\cleave\\dist\\addons\\cleave-phone.li.js",
+      "PackagePath": "staticwebassets\\lib\\cleave\\dist\\addons\\cleave-phone.li.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\cleave\\dist\\addons\\cleave-phone.lk.js",
+      "PackagePath": "staticwebassets\\lib\\cleave\\dist\\addons\\cleave-phone.lk.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\cleave\\dist\\addons\\cleave-phone.lr.js",
+      "PackagePath": "staticwebassets\\lib\\cleave\\dist\\addons\\cleave-phone.lr.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\cleave\\dist\\addons\\cleave-phone.ls.js",
+      "PackagePath": "staticwebassets\\lib\\cleave\\dist\\addons\\cleave-phone.ls.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\cleave\\dist\\addons\\cleave-phone.lt.js",
+      "PackagePath": "staticwebassets\\lib\\cleave\\dist\\addons\\cleave-phone.lt.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\cleave\\dist\\addons\\cleave-phone.lu.js",
+      "PackagePath": "staticwebassets\\lib\\cleave\\dist\\addons\\cleave-phone.lu.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\cleave\\dist\\addons\\cleave-phone.lv.js",
+      "PackagePath": "staticwebassets\\lib\\cleave\\dist\\addons\\cleave-phone.lv.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\cleave\\dist\\addons\\cleave-phone.ly.js",
+      "PackagePath": "staticwebassets\\lib\\cleave\\dist\\addons\\cleave-phone.ly.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\cleave\\dist\\addons\\cleave-phone.ma.js",
+      "PackagePath": "staticwebassets\\lib\\cleave\\dist\\addons\\cleave-phone.ma.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\cleave\\dist\\addons\\cleave-phone.mc.js",
+      "PackagePath": "staticwebassets\\lib\\cleave\\dist\\addons\\cleave-phone.mc.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\cleave\\dist\\addons\\cleave-phone.md.js",
+      "PackagePath": "staticwebassets\\lib\\cleave\\dist\\addons\\cleave-phone.md.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\cleave\\dist\\addons\\cleave-phone.me.js",
+      "PackagePath": "staticwebassets\\lib\\cleave\\dist\\addons\\cleave-phone.me.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\cleave\\dist\\addons\\cleave-phone.mf.js",
+      "PackagePath": "staticwebassets\\lib\\cleave\\dist\\addons\\cleave-phone.mf.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\cleave\\dist\\addons\\cleave-phone.mg.js",
+      "PackagePath": "staticwebassets\\lib\\cleave\\dist\\addons\\cleave-phone.mg.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\cleave\\dist\\addons\\cleave-phone.mh.js",
+      "PackagePath": "staticwebassets\\lib\\cleave\\dist\\addons\\cleave-phone.mh.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\cleave\\dist\\addons\\cleave-phone.mk.js",
+      "PackagePath": "staticwebassets\\lib\\cleave\\dist\\addons\\cleave-phone.mk.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\cleave\\dist\\addons\\cleave-phone.ml.js",
+      "PackagePath": "staticwebassets\\lib\\cleave\\dist\\addons\\cleave-phone.ml.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\cleave\\dist\\addons\\cleave-phone.mm.js",
+      "PackagePath": "staticwebassets\\lib\\cleave\\dist\\addons\\cleave-phone.mm.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\cleave\\dist\\addons\\cleave-phone.mn.js",
+      "PackagePath": "staticwebassets\\lib\\cleave\\dist\\addons\\cleave-phone.mn.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\cleave\\dist\\addons\\cleave-phone.mo.js",
+      "PackagePath": "staticwebassets\\lib\\cleave\\dist\\addons\\cleave-phone.mo.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\cleave\\dist\\addons\\cleave-phone.mp.js",
+      "PackagePath": "staticwebassets\\lib\\cleave\\dist\\addons\\cleave-phone.mp.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\cleave\\dist\\addons\\cleave-phone.mq.js",
+      "PackagePath": "staticwebassets\\lib\\cleave\\dist\\addons\\cleave-phone.mq.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\cleave\\dist\\addons\\cleave-phone.mr.js",
+      "PackagePath": "staticwebassets\\lib\\cleave\\dist\\addons\\cleave-phone.mr.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\cleave\\dist\\addons\\cleave-phone.ms.js",
+      "PackagePath": "staticwebassets\\lib\\cleave\\dist\\addons\\cleave-phone.ms.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\cleave\\dist\\addons\\cleave-phone.mt.js",
+      "PackagePath": "staticwebassets\\lib\\cleave\\dist\\addons\\cleave-phone.mt.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\cleave\\dist\\addons\\cleave-phone.mu.js",
+      "PackagePath": "staticwebassets\\lib\\cleave\\dist\\addons\\cleave-phone.mu.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\cleave\\dist\\addons\\cleave-phone.mv.js",
+      "PackagePath": "staticwebassets\\lib\\cleave\\dist\\addons\\cleave-phone.mv.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\cleave\\dist\\addons\\cleave-phone.mw.js",
+      "PackagePath": "staticwebassets\\lib\\cleave\\dist\\addons\\cleave-phone.mw.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\cleave\\dist\\addons\\cleave-phone.mx.js",
+      "PackagePath": "staticwebassets\\lib\\cleave\\dist\\addons\\cleave-phone.mx.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\cleave\\dist\\addons\\cleave-phone.my.js",
+      "PackagePath": "staticwebassets\\lib\\cleave\\dist\\addons\\cleave-phone.my.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\cleave\\dist\\addons\\cleave-phone.mz.js",
+      "PackagePath": "staticwebassets\\lib\\cleave\\dist\\addons\\cleave-phone.mz.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\cleave\\dist\\addons\\cleave-phone.na.js",
+      "PackagePath": "staticwebassets\\lib\\cleave\\dist\\addons\\cleave-phone.na.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\cleave\\dist\\addons\\cleave-phone.nc.js",
+      "PackagePath": "staticwebassets\\lib\\cleave\\dist\\addons\\cleave-phone.nc.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\cleave\\dist\\addons\\cleave-phone.ne.js",
+      "PackagePath": "staticwebassets\\lib\\cleave\\dist\\addons\\cleave-phone.ne.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\cleave\\dist\\addons\\cleave-phone.nf.js",
+      "PackagePath": "staticwebassets\\lib\\cleave\\dist\\addons\\cleave-phone.nf.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\cleave\\dist\\addons\\cleave-phone.ng.js",
+      "PackagePath": "staticwebassets\\lib\\cleave\\dist\\addons\\cleave-phone.ng.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\cleave\\dist\\addons\\cleave-phone.ni.js",
+      "PackagePath": "staticwebassets\\lib\\cleave\\dist\\addons\\cleave-phone.ni.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\cleave\\dist\\addons\\cleave-phone.nl.js",
+      "PackagePath": "staticwebassets\\lib\\cleave\\dist\\addons\\cleave-phone.nl.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\cleave\\dist\\addons\\cleave-phone.no.js",
+      "PackagePath": "staticwebassets\\lib\\cleave\\dist\\addons\\cleave-phone.no.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\cleave\\dist\\addons\\cleave-phone.np.js",
+      "PackagePath": "staticwebassets\\lib\\cleave\\dist\\addons\\cleave-phone.np.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\cleave\\dist\\addons\\cleave-phone.nr.js",
+      "PackagePath": "staticwebassets\\lib\\cleave\\dist\\addons\\cleave-phone.nr.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\cleave\\dist\\addons\\cleave-phone.nu.js",
+      "PackagePath": "staticwebassets\\lib\\cleave\\dist\\addons\\cleave-phone.nu.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\cleave\\dist\\addons\\cleave-phone.nz.js",
+      "PackagePath": "staticwebassets\\lib\\cleave\\dist\\addons\\cleave-phone.nz.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\cleave\\dist\\addons\\cleave-phone.om.js",
+      "PackagePath": "staticwebassets\\lib\\cleave\\dist\\addons\\cleave-phone.om.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\cleave\\dist\\addons\\cleave-phone.pa.js",
+      "PackagePath": "staticwebassets\\lib\\cleave\\dist\\addons\\cleave-phone.pa.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\cleave\\dist\\addons\\cleave-phone.pe.js",
+      "PackagePath": "staticwebassets\\lib\\cleave\\dist\\addons\\cleave-phone.pe.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\cleave\\dist\\addons\\cleave-phone.pf.js",
+      "PackagePath": "staticwebassets\\lib\\cleave\\dist\\addons\\cleave-phone.pf.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\cleave\\dist\\addons\\cleave-phone.pg.js",
+      "PackagePath": "staticwebassets\\lib\\cleave\\dist\\addons\\cleave-phone.pg.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\cleave\\dist\\addons\\cleave-phone.ph.js",
+      "PackagePath": "staticwebassets\\lib\\cleave\\dist\\addons\\cleave-phone.ph.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\cleave\\dist\\addons\\cleave-phone.pk.js",
+      "PackagePath": "staticwebassets\\lib\\cleave\\dist\\addons\\cleave-phone.pk.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\cleave\\dist\\addons\\cleave-phone.pl.js",
+      "PackagePath": "staticwebassets\\lib\\cleave\\dist\\addons\\cleave-phone.pl.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\cleave\\dist\\addons\\cleave-phone.pm.js",
+      "PackagePath": "staticwebassets\\lib\\cleave\\dist\\addons\\cleave-phone.pm.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\cleave\\dist\\addons\\cleave-phone.pr.js",
+      "PackagePath": "staticwebassets\\lib\\cleave\\dist\\addons\\cleave-phone.pr.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\cleave\\dist\\addons\\cleave-phone.ps.js",
+      "PackagePath": "staticwebassets\\lib\\cleave\\dist\\addons\\cleave-phone.ps.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\cleave\\dist\\addons\\cleave-phone.pt.js",
+      "PackagePath": "staticwebassets\\lib\\cleave\\dist\\addons\\cleave-phone.pt.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\cleave\\dist\\addons\\cleave-phone.pw.js",
+      "PackagePath": "staticwebassets\\lib\\cleave\\dist\\addons\\cleave-phone.pw.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\cleave\\dist\\addons\\cleave-phone.py.js",
+      "PackagePath": "staticwebassets\\lib\\cleave\\dist\\addons\\cleave-phone.py.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\cleave\\dist\\addons\\cleave-phone.qa.js",
+      "PackagePath": "staticwebassets\\lib\\cleave\\dist\\addons\\cleave-phone.qa.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\cleave\\dist\\addons\\cleave-phone.re.js",
+      "PackagePath": "staticwebassets\\lib\\cleave\\dist\\addons\\cleave-phone.re.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\cleave\\dist\\addons\\cleave-phone.ro.js",
+      "PackagePath": "staticwebassets\\lib\\cleave\\dist\\addons\\cleave-phone.ro.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\cleave\\dist\\addons\\cleave-phone.rs.js",
+      "PackagePath": "staticwebassets\\lib\\cleave\\dist\\addons\\cleave-phone.rs.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\cleave\\dist\\addons\\cleave-phone.ru.js",
+      "PackagePath": "staticwebassets\\lib\\cleave\\dist\\addons\\cleave-phone.ru.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\cleave\\dist\\addons\\cleave-phone.rw.js",
+      "PackagePath": "staticwebassets\\lib\\cleave\\dist\\addons\\cleave-phone.rw.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\cleave\\dist\\addons\\cleave-phone.sa.js",
+      "PackagePath": "staticwebassets\\lib\\cleave\\dist\\addons\\cleave-phone.sa.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\cleave\\dist\\addons\\cleave-phone.sb.js",
+      "PackagePath": "staticwebassets\\lib\\cleave\\dist\\addons\\cleave-phone.sb.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\cleave\\dist\\addons\\cleave-phone.sc.js",
+      "PackagePath": "staticwebassets\\lib\\cleave\\dist\\addons\\cleave-phone.sc.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\cleave\\dist\\addons\\cleave-phone.sd.js",
+      "PackagePath": "staticwebassets\\lib\\cleave\\dist\\addons\\cleave-phone.sd.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\cleave\\dist\\addons\\cleave-phone.se.js",
+      "PackagePath": "staticwebassets\\lib\\cleave\\dist\\addons\\cleave-phone.se.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\cleave\\dist\\addons\\cleave-phone.sg.js",
+      "PackagePath": "staticwebassets\\lib\\cleave\\dist\\addons\\cleave-phone.sg.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\cleave\\dist\\addons\\cleave-phone.sh.js",
+      "PackagePath": "staticwebassets\\lib\\cleave\\dist\\addons\\cleave-phone.sh.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\cleave\\dist\\addons\\cleave-phone.si.js",
+      "PackagePath": "staticwebassets\\lib\\cleave\\dist\\addons\\cleave-phone.si.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\cleave\\dist\\addons\\cleave-phone.sj.js",
+      "PackagePath": "staticwebassets\\lib\\cleave\\dist\\addons\\cleave-phone.sj.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\cleave\\dist\\addons\\cleave-phone.sk.js",
+      "PackagePath": "staticwebassets\\lib\\cleave\\dist\\addons\\cleave-phone.sk.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\cleave\\dist\\addons\\cleave-phone.sl.js",
+      "PackagePath": "staticwebassets\\lib\\cleave\\dist\\addons\\cleave-phone.sl.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\cleave\\dist\\addons\\cleave-phone.sm.js",
+      "PackagePath": "staticwebassets\\lib\\cleave\\dist\\addons\\cleave-phone.sm.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\cleave\\dist\\addons\\cleave-phone.sn.js",
+      "PackagePath": "staticwebassets\\lib\\cleave\\dist\\addons\\cleave-phone.sn.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\cleave\\dist\\addons\\cleave-phone.so.js",
+      "PackagePath": "staticwebassets\\lib\\cleave\\dist\\addons\\cleave-phone.so.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\cleave\\dist\\addons\\cleave-phone.sr.js",
+      "PackagePath": "staticwebassets\\lib\\cleave\\dist\\addons\\cleave-phone.sr.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\cleave\\dist\\addons\\cleave-phone.ss.js",
+      "PackagePath": "staticwebassets\\lib\\cleave\\dist\\addons\\cleave-phone.ss.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\cleave\\dist\\addons\\cleave-phone.st.js",
+      "PackagePath": "staticwebassets\\lib\\cleave\\dist\\addons\\cleave-phone.st.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\cleave\\dist\\addons\\cleave-phone.sv.js",
+      "PackagePath": "staticwebassets\\lib\\cleave\\dist\\addons\\cleave-phone.sv.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\cleave\\dist\\addons\\cleave-phone.sx.js",
+      "PackagePath": "staticwebassets\\lib\\cleave\\dist\\addons\\cleave-phone.sx.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\cleave\\dist\\addons\\cleave-phone.sy.js",
+      "PackagePath": "staticwebassets\\lib\\cleave\\dist\\addons\\cleave-phone.sy.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\cleave\\dist\\addons\\cleave-phone.sz.js",
+      "PackagePath": "staticwebassets\\lib\\cleave\\dist\\addons\\cleave-phone.sz.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\cleave\\dist\\addons\\cleave-phone.ta.js",
+      "PackagePath": "staticwebassets\\lib\\cleave\\dist\\addons\\cleave-phone.ta.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\cleave\\dist\\addons\\cleave-phone.tc.js",
+      "PackagePath": "staticwebassets\\lib\\cleave\\dist\\addons\\cleave-phone.tc.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\cleave\\dist\\addons\\cleave-phone.td.js",
+      "PackagePath": "staticwebassets\\lib\\cleave\\dist\\addons\\cleave-phone.td.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\cleave\\dist\\addons\\cleave-phone.tg.js",
+      "PackagePath": "staticwebassets\\lib\\cleave\\dist\\addons\\cleave-phone.tg.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\cleave\\dist\\addons\\cleave-phone.th.js",
+      "PackagePath": "staticwebassets\\lib\\cleave\\dist\\addons\\cleave-phone.th.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\cleave\\dist\\addons\\cleave-phone.tj.js",
+      "PackagePath": "staticwebassets\\lib\\cleave\\dist\\addons\\cleave-phone.tj.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\cleave\\dist\\addons\\cleave-phone.tk.js",
+      "PackagePath": "staticwebassets\\lib\\cleave\\dist\\addons\\cleave-phone.tk.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\cleave\\dist\\addons\\cleave-phone.tl.js",
+      "PackagePath": "staticwebassets\\lib\\cleave\\dist\\addons\\cleave-phone.tl.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\cleave\\dist\\addons\\cleave-phone.tm.js",
+      "PackagePath": "staticwebassets\\lib\\cleave\\dist\\addons\\cleave-phone.tm.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\cleave\\dist\\addons\\cleave-phone.tn.js",
+      "PackagePath": "staticwebassets\\lib\\cleave\\dist\\addons\\cleave-phone.tn.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\cleave\\dist\\addons\\cleave-phone.to.js",
+      "PackagePath": "staticwebassets\\lib\\cleave\\dist\\addons\\cleave-phone.to.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\cleave\\dist\\addons\\cleave-phone.tr.js",
+      "PackagePath": "staticwebassets\\lib\\cleave\\dist\\addons\\cleave-phone.tr.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\cleave\\dist\\addons\\cleave-phone.tt.js",
+      "PackagePath": "staticwebassets\\lib\\cleave\\dist\\addons\\cleave-phone.tt.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\cleave\\dist\\addons\\cleave-phone.tv.js",
+      "PackagePath": "staticwebassets\\lib\\cleave\\dist\\addons\\cleave-phone.tv.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\cleave\\dist\\addons\\cleave-phone.tw.js",
+      "PackagePath": "staticwebassets\\lib\\cleave\\dist\\addons\\cleave-phone.tw.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\cleave\\dist\\addons\\cleave-phone.tz.js",
+      "PackagePath": "staticwebassets\\lib\\cleave\\dist\\addons\\cleave-phone.tz.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\cleave\\dist\\addons\\cleave-phone.ua.js",
+      "PackagePath": "staticwebassets\\lib\\cleave\\dist\\addons\\cleave-phone.ua.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\cleave\\dist\\addons\\cleave-phone.ug.js",
+      "PackagePath": "staticwebassets\\lib\\cleave\\dist\\addons\\cleave-phone.ug.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\cleave\\dist\\addons\\cleave-phone.us.js",
+      "PackagePath": "staticwebassets\\lib\\cleave\\dist\\addons\\cleave-phone.us.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\cleave\\dist\\addons\\cleave-phone.uy.js",
+      "PackagePath": "staticwebassets\\lib\\cleave\\dist\\addons\\cleave-phone.uy.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\cleave\\dist\\addons\\cleave-phone.uz.js",
+      "PackagePath": "staticwebassets\\lib\\cleave\\dist\\addons\\cleave-phone.uz.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\cleave\\dist\\addons\\cleave-phone.va.js",
+      "PackagePath": "staticwebassets\\lib\\cleave\\dist\\addons\\cleave-phone.va.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\cleave\\dist\\addons\\cleave-phone.vc.js",
+      "PackagePath": "staticwebassets\\lib\\cleave\\dist\\addons\\cleave-phone.vc.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\cleave\\dist\\addons\\cleave-phone.ve.js",
+      "PackagePath": "staticwebassets\\lib\\cleave\\dist\\addons\\cleave-phone.ve.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\cleave\\dist\\addons\\cleave-phone.vg.js",
+      "PackagePath": "staticwebassets\\lib\\cleave\\dist\\addons\\cleave-phone.vg.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\cleave\\dist\\addons\\cleave-phone.vi.js",
+      "PackagePath": "staticwebassets\\lib\\cleave\\dist\\addons\\cleave-phone.vi.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\cleave\\dist\\addons\\cleave-phone.vn.js",
+      "PackagePath": "staticwebassets\\lib\\cleave\\dist\\addons\\cleave-phone.vn.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\cleave\\dist\\addons\\cleave-phone.vu.js",
+      "PackagePath": "staticwebassets\\lib\\cleave\\dist\\addons\\cleave-phone.vu.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\cleave\\dist\\addons\\cleave-phone.wf.js",
+      "PackagePath": "staticwebassets\\lib\\cleave\\dist\\addons\\cleave-phone.wf.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\cleave\\dist\\addons\\cleave-phone.ws.js",
+      "PackagePath": "staticwebassets\\lib\\cleave\\dist\\addons\\cleave-phone.ws.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\cleave\\dist\\addons\\cleave-phone.xk.js",
+      "PackagePath": "staticwebassets\\lib\\cleave\\dist\\addons\\cleave-phone.xk.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\cleave\\dist\\addons\\cleave-phone.ye.js",
+      "PackagePath": "staticwebassets\\lib\\cleave\\dist\\addons\\cleave-phone.ye.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\cleave\\dist\\addons\\cleave-phone.yt.js",
+      "PackagePath": "staticwebassets\\lib\\cleave\\dist\\addons\\cleave-phone.yt.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\cleave\\dist\\addons\\cleave-phone.za.js",
+      "PackagePath": "staticwebassets\\lib\\cleave\\dist\\addons\\cleave-phone.za.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\cleave\\dist\\addons\\cleave-phone.zm.js",
+      "PackagePath": "staticwebassets\\lib\\cleave\\dist\\addons\\cleave-phone.zm.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\cleave\\dist\\addons\\cleave-phone.zw.js",
+      "PackagePath": "staticwebassets\\lib\\cleave\\dist\\addons\\cleave-phone.zw.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\cleave\\dist\\cleave-angular.js",
+      "PackagePath": "staticwebassets\\lib\\cleave\\dist\\cleave-angular.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\cleave\\dist\\cleave-angular.min.js",
+      "PackagePath": "staticwebassets\\lib\\cleave\\dist\\cleave-angular.min.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\cleave\\dist\\cleave-esm.js",
+      "PackagePath": "staticwebassets\\lib\\cleave\\dist\\cleave-esm.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\cleave\\dist\\cleave-esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\cleave\\dist\\cleave-esm.min.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\cleave\\dist\\cleave-react-node.js",
+      "PackagePath": "staticwebassets\\lib\\cleave\\dist\\cleave-react-node.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\cleave\\dist\\cleave-react-node.min.js",
+      "PackagePath": "staticwebassets\\lib\\cleave\\dist\\cleave-react-node.min.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\cleave\\dist\\cleave-react.js",
+      "PackagePath": "staticwebassets\\lib\\cleave\\dist\\cleave-react.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\cleave\\dist\\cleave-react.min.js",
+      "PackagePath": "staticwebassets\\lib\\cleave\\dist\\cleave-react.min.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\cleave\\dist\\cleave.js",
+      "PackagePath": "staticwebassets\\lib\\cleave\\dist\\cleave.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\cleave\\dist\\cleave.min.js",
+      "PackagePath": "staticwebassets\\lib\\cleave\\dist\\cleave.min.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "C:\\Users\\FulL_\\Desktop\\FinalProject\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.FinalProject.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.FinalProject.props",
+      "PackagePath": "build\\FinalProject.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.FinalProject.props",
+      "PackagePath": "buildMultiTargeting\\FinalProject.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.FinalProject.props",
+      "PackagePath": "buildTransitive\\FinalProject.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

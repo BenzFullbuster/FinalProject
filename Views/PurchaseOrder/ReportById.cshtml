@@ -1,0 +1,242 @@
+﻿@model FinalProject.Models.ViewModels.PurchaseOrderViewModel
+
+@{
+    Layout = null;
+    int rows = 1;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .row {
+            display: -webkit-box; /* wkhtmltopdf ใช้อันนี้ */
+            display: flex;
+        }
+
+        .row > div {
+            -webkit-box-flex: 1;
+            -webkit-flex: 1;
+            flex: 1;
+        }
+
+        .row > div:last-child {
+            margin-right: 0;
+        }
+
+        .Company {
+            width: 70%;
+            max-height: 115px;
+            padding: 10px 10px 0px 10px;
+        }
+
+        .Company h4,
+        .Company p {
+            margin: 0;
+            word-wrap: break-word;
+            word-break: break-all;
+        }
+
+        .BillType {
+            width: 30%;
+            max-height: 115px;
+            padding: 10px 10px 0px 10px;
+            text-align: center;
+            -webkit-box-pack: center; /* จัดศูนย์แนวนอน */
+            -webkit-box-align: center; /* จัดศูนย์แนวตั้ง */
+            display: -webkit-box;
+            align-content: center;
+        }
+
+        .BillType h1 {
+            margin: 0;
+            color: #0d6efd;
+        }
+
+        .Line2{
+            border: 1px solid black;
+            border-radius: 16px;
+            line-height: 20px;
+        }
+
+        .Supplier {
+            width: 69%;
+            max-height: 115px;
+            padding: 10px;
+        }
+
+        .Supplier p {
+            margin: 0;
+            word-wrap: break-word;
+            word-break: break-all;
+        }
+
+        .Billnumber1 {
+            width: 10%;
+            max-height: 115px;
+            padding: 10px;
+            border-left: 1px solid black;
+        }
+
+        .Billnumber1 p {
+            margin: 0;
+            text-align: end;
+        }
+
+        .Billnumber2 {
+            width: 21%;
+            max-height: 115px;
+            padding: 10px;
+        }
+
+        .Billnumber2 p {
+            margin: 0;
+            text-align: start;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        Table {
+            table-layout: fixed;
+            margin-top: 10px;
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .productName {
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        th, td {
+            padding: 10px;
+            border: 1px solid black;
+            
+        }
+
+        .note {
+            vertical-align: baseline;
+            word-wrap: break-word;
+            word-break: break-all;
+        }
+
+        .signature th {
+            text-align: center;
+            vertical-align: bottom;
+        }
+
+        .signature tr {
+            height: 130px;
+            vertical-align: bottom;
+        }
+
+        .signature p {
+            margin: 0;
+        }
+
+        .signature hr {
+            margin: 0 auto;
+            width: 70%;
+            border-color: black;
+        }
+    </style>
+</head>
+<body>
+    <div class="row">
+        <div class="Company">
+            <h4>บริษัท กคข จำกัด (สำนักงานใหญ่)</h4>
+            <p>149 หมู่ที่ 1 คลองบางบอน บางบอน กรุงเทพฯ 10150</p>
+            <p>โทร.0-2222-2222</p>
+            <p>เลขประจำตัวผู้เสียภาษี 01234567890123</p>
+        </div>
+        <div class="BillType">
+            <h1>ใบสั่งซื้อ</h1>
+        </div>
+    </div>
+    <div class="row Line2">
+        <div class="Supplier">
+            <p><strong>ผู้จำหน่าย </strong>@Model.SupplierName</p>
+            <p>@Model.SupplierAddress</p>
+            <p>โทร.@Model.SupplierPhoneNumber</p>
+            <p>เลขประจำตัวผู้เสียภาษี @Model.FormattedTaxNumber</p>
+        </div>
+        <div class="Billnumber1">
+            <p><strong>เลขที่</strong></p>
+            <p><strong>วันที่</strong></p>
+            <p><strong>พนักงาน</strong></p>
+        </div>
+        <div class="Billnumber2">
+            <p>@Model.PurchaseOrderCode</p>
+            <p>@Model.PurchaseOrderDate.ToString("dd/MM/yyyy")</p>
+            <p>@Model.EmployeeName</p>
+        </div>
+    </div>
+    <table>
+        <thead>
+            <tr>
+                <th style="width: 8%">ลำดับ</th>
+                <th>รายละเอียดสินค้า</th>
+                <th style="width: 12%">จำนวน</th>
+                <th style="width: 13%">หน่วยละ</th>
+                <th style="width: 14%">จำนวนเงิน</th>
+            </tr>
+        </thead>
+        <tbody>
+            @if (Model.PurchaseOrderDetails.Any() || Model.PurchaseOrderDetails.Count > 0)
+            {
+                foreach (var item in Model.PurchaseOrderDetails)
+                {
+                    <tr>
+                        <td style="text-align: center;">@rows</td>
+                        <td class="productName" style="text-align: start;">@Html.DisplayFor(itemModel => item.ProductName)</td>
+                        <td style="text-align: end;">@Html.DisplayFor(itemModel => item.Quantity)</td>
+                        <td style="text-align: end;">@Html.DisplayFor(itemModel => item.Unitprice)</td>
+                        <td style="text-align: end;">@Html.DisplayFor(itemModel => item.Amount)</td>
+                    </tr>
+                    rows += 1;
+                }
+            }
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="2" rowspan="2" class="note">
+                    <strong>@Html.DisplayNameFor(Model => Model.Description) : </strong>
+                    @Html.DisplayFor(Model => Model.Description)
+                </td>
+                <th colspan="2" style="text-align: end">@Html.DisplayNameFor(Model => Model.Subtotal)</th>
+                <td style="text-align: end">@Html.DisplayFor(Model => Model.Subtotal)</td>
+            </tr>
+            <tr>
+                <th colspan="2" style="text-align: end">@Html.DisplayNameFor(Model => Model.Vat)</th>
+                <td style="text-align: end">@Html.DisplayFor(Model => Model.Vat)</td>
+            </tr>
+            <tr>
+                <td colspan="2" style="text-align: center;">@Html.DisplayFor(Model => Model.NettotalText)</td>
+                <th colspan="2" style="text-align: end;">@Html.DisplayNameFor(Model => Model.Nettotal)</th>
+                <td style="text-align: end;">@Html.DisplayFor(Model => Model.Nettotal)</td>
+            </tr>
+        </tfoot>
+    </table>
+    <table>
+        <tbody class="signature">
+            <tr>
+                <th>
+                    <hr />
+                    <p>ผู้สั่งซื้อสินค้า</p>
+                </th>
+                <th style="padding-top: 0;">
+                    <p style="margin-bottom: 75px;">ในนาม บริษัท เซ็นทรัล อินดัสตรี้ จำกัด</p>
+                    <hr />
+                    <p>ผู้มีอำนาจลงนาม</p>
+                </th>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
